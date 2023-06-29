@@ -1,9 +1,8 @@
 .header {
-    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: inherit;
 
@@ -15,15 +14,16 @@
         // align-items: center;
 
         .logo {
-            padding: 30px 30px 30px 0;
+            padding: 30px 30px 30px 15px;
         }
 
         .headerNavList {
             display: flex;
             /* text-decoration: none; */
             list-style: none;
-            gap: 70px;
+            gap: 40px;
             align-items: center;
+            padding-right: 20px;
 
             li {
                 position: relative;
@@ -32,8 +32,8 @@
                 .active {
                     color: rgb(13, 106, 255);
                     padding-bottom: 10px;
-                    padding-left: 5px;
-                    padding-right: 5px;
+                    padding-left: 10px;
+                    padding-right: 10px;
                     border-bottom: 2px solid rgb(13, 106, 255);
                 }
 
@@ -80,5 +80,104 @@
 
 
         }
+    }
+}
+
+.hiddenToggle {
+
+    display: none;
+}
+
+@media only screen and (max-width: 720px) {
+    .mobileIcon {
+        display: flex;
+        padding: 15px;
+        align-items: center;
+    }
+
+    .headerNavList {
+        position: absolute;
+        top: 70px;
+        left: 100vw;
+        transition: left .2s ease-in-out;
+        background-color: white;
+        height: calc(100vh - 60px);
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        gap: 0px !important;
+        align-items: baseline !important;
+        padding-right: 0 !important;
+        padding-top: 10px;
+        overflow: auto;
+        padding: 0;
+
+        li {
+            border-top: 1px solid rgb(123, 123, 123);
+            display: block !important;
+            width: 100%;
+            padding: 15px;
+
+            .active {
+                color: rgb(13, 106, 255);
+                padding-bottom: 0 !important;
+                padding-left: 0px !important;
+                padding-right: 0 !important;
+                border-bottom: 0px !important;
+            }
+
+            .hiddenToggle:checked+ul {
+                display: block !important;
+            }
+
+            &:target {
+                pointer-events: none;
+
+                >a {
+
+                    opacity: .6;
+                }
+
+                ul {
+                    display: block;
+
+                    li {
+                        padding: 20px;
+                    }
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: inherit;
+                // padding-left: 20px;
+
+                &:hover {
+                    opacity: .6;
+                    transition: opacity .3s linear;
+                }
+            }
+
+            ul {
+                display: none;
+                position: static !important;
+                background-color: #ffffff;
+                min-width: 220px;
+                padding: 6px 8px;
+                z-index: 2;
+                border-radius: 0 0 20px 20px;
+                box-shadow: 0 20px 48px #2c2b300d;
+                border: 1px solid rgb(248, 248, 248);
+            }
+
+
+        }
+
+
+    }
+
+    .headerNavList.showSideBar {
+        left: 0;
     }
 }

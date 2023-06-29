@@ -1,15 +1,17 @@
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 
+import cx from "classname";
 import s from "./style.module.css";
 
 export default function HomeLayout({
-    children
+    children,
+    className
 }) {
     return (
         <div className={s.mainParent}>
             <Header />
-            <main className={s.main}>
+            <main className={cx(s.main, className)}>
                 {children}
             </main>
             <Footer />

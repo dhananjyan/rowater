@@ -1,9 +1,11 @@
 import HomeLayout from "@/components/HomeLayout";
+import s from "./page.module.css"
 
 export default function Home() {
   return (
-    <HomeLayout>
-      Hello
+    <HomeLayout className={s.hello}>
+      {/* <div className={s.hello}>Helo</div> */}
+      Helloooooooooo
       <hr/>Hello
       <hr/>Hello
       <hr/>Hello
