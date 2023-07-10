@@ -1,0 +1,53 @@
+.mainBanner {
+    padding-top: 80px;
+    min-height: 80vh;
+    position: relative;
+    background-color: black;
+    // background-image: url(../../../public/images/one.jpeg);
+
+    .bgImg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        opacity: .5;
+    }
+
+    .content {
+        margin: auto;
+        padding: 0 15px;
+        max-width: var(--max-width);
+        color: white;
+        opacity: 1;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        height: 100%;
+        z-index: 10;
+
+        .bannerTextArea {
+            flex: 1;
+            padding-top: 150px;
+            p {
+                margin-top: 20px;
+            }
+
+            // h1 {
+
+            //     font-size: 1.5rem;
+            // }
+        }
+
+        .bannerFormArea {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+
+            
+        }
+    }
+}

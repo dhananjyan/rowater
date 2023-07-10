@@ -1,10 +1,12 @@
 import HomeLayout from "@/components/HomeLayout";
 import s from "./page.module.css"
+import MainBanner from "@/components/MainBanner/MainBanner";
 
 export default function Home() {
   return (
     <HomeLayout className={s.hello}>
-      {/* <div className={s.hello}>Helo</div> */}
+      {/* <div className={s.mainBanner}>Helo</div> */}
+      <MainBanner />
       Helloooooooooo
       <hr/>Hello
       <hr/>Hello

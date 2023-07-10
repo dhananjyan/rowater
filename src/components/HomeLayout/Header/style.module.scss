@@ -5,6 +5,15 @@
     position: fixed;
     top: 0;
     background-color: inherit;
+    z-index: 1000;
+    transition: all 1s ease;
+    color: white;
+    
+    &.headerScrolled {
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+        color: black
+    }
 
     .headerNav {
         max-width: var(--max-width);
@@ -23,7 +32,7 @@
             list-style: none;
             gap: 40px;
             align-items: center;
-            padding-right: 20px;
+            padding-right: 15px;
 
             li {
                 position: relative;
@@ -71,8 +80,8 @@
                     padding: 6px 8px;
                     z-index: 2;
                     border-radius: 0 0 20px 20px;
-                    box-shadow: 0 20px 48px #2c2b300d;
-                    border: 1px solid rgb(248, 248, 248);
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+                    // border: 1px solid rgb(248, 248, 248);
                 }
 
 

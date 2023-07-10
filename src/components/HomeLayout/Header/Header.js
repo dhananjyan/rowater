@@ -1,24 +1,29 @@
 "use client"
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 import cx from "classname";
 import s from "./style.module.scss";
-import { useState } from "react";
+
 import useIsMobile from "@/hooks/useIsMobile";
+import useScrollPosition from "@/hooks/useScrollPosition";
 
 export default function Header() {
     const pathname = usePathname();
     const isMobile = useIsMobile();
+    const scrollPosition = useScrollPosition();
     const [toggle, setToggle] = useState(isMobile ? false : true);
     const [isSideBarOpen, setIsSideBarOpen] = useState(false);
 
     const handleToggle = () => {
+        if(!isMobile) return;
         setToggle(i => !i);
     }
+    
 
     return (
-        <header className={s.header}>
+        <header className={cx(s.header, { [s.headerScrolled]: (scrollPosition > 0) })}>
             <nav className={s.headerNav}>
                 <div className={s.logo}>LOGO</div>
                 {isMobile ? <div className={s.mobileIcon} onClick={() => setIsSideBarOpen(i => !i)} role="button">
@@ -37,7 +42,7 @@ export default function Header() {
                     <li>
 
                         <Link
-                            href="/products"
+                            href="#"
                             onClick={handleToggle}
                             className={cx({
                                 [s.active]: pathname?.includes("/products")
