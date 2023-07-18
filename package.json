@@ -17,6 +17,8 @@
     "react": "18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-dom": "18.2.0",
-    "sass": "^1.63.6"
+    "react-hook-form": "^7.45.1",
+    "sass": "^1.63.6",
+    "swiper": "^10.0.4"
   }
 }
