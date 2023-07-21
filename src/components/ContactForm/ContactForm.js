@@ -13,10 +13,10 @@ export default function ContactForm() {
         <div className={s.formContainer}>
             <h3>Request a call back</h3>
             <Form onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}>
-                <Inputs name="name" register={register} label="Name" />
-                <Inputs register={register} name="email" label="Email" />
-                <Inputs register={register} name="phoneNumber" label="Mobile Number" />
-                <Inputs register={register} type="textarea" name="message" label="Message" />
+                <Inputs inputGroupClassname={s.input} inputG name="name" register={register} placeholder="Name" />
+                <Inputs inputGroupClassname={s.input} register={register} name="email" placeholder="Email" />
+                <Inputs inputGroupClassname={s.input} register={register} name="phoneNumber" placeholder="Mobile Number" />
+                <Inputs inputGroupClassname={s.input} register={register} type="textarea" name="message" placeholder="Message" />
                 <Button variant="primary" type="submit">
                     Submit
                 </Button>

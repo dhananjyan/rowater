@@ -1,27 +1,26 @@
 .productCard {
-    // max-width: 300px;
+    max-width: 250px;
     // min-width: 230px;
-    border: 1px solid;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 16px;
     // min-height: 400px;
-
     .image {
         height: 180px;
         width: 100%;
+        border-bottom: 1px solid whitesmoke;
         // padding: 10px;
-
         img {
             height: 100%;
             width: 100%;
+            border-radius: 16px;
             object-fit: cover;
         }
     }
-
-    .title {
-        text-align: center;
-        font-size: 20px;
-        margin-top: 10px;
-    }
-
+    // .title {
+    //     text-align: center;
+    //     font-size: 20px;
+    //     margin-top: 10px;
+    // }
     .description {
         padding: 10px;
     }

@@ -8,24 +8,23 @@
     z-index: 1000;
     transition: all 1s ease;
     color: white;
-    
     &.headerScrolled {
         background-color: white;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
         color: black
     }
-
     .headerNav {
         max-width: var(--max-width);
         width: 100%;
         display: flex;
         justify-content: space-between;
         // align-items: center;
-
         .logo {
             padding: 30px 30px 30px 15px;
         }
-
+        .mobileIcon {
+            display: none;
+        }
         .headerNavList {
             display: flex;
             /* text-decoration: none; */
@@ -33,11 +32,9 @@
             gap: 40px;
             align-items: center;
             padding-right: 15px;
-
             li {
                 position: relative;
                 display: inline-block;
-
                 .active {
                     color: rgb(13, 106, 255);
                     padding-bottom: 10px;
@@ -45,33 +42,25 @@
                     padding-right: 10px;
                     border-bottom: 2px solid rgb(13, 106, 255);
                 }
-
                 &:hover {
-
                     >a {
-
                         opacity: .6;
                     }
-
                     ul {
                         display: block;
-
                         li {
                             padding: 10px;
                         }
                     }
                 }
-
                 a {
                     text-decoration: none;
                     color: inherit;
-
                     &:hover {
                         opacity: .6;
                         transition: opacity .3s linear;
                     }
                 }
-
                 ul {
                     display: none;
                     position: absolute;
@@ -83,17 +72,12 @@
                     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
                     // border: 1px solid rgb(248, 248, 248);
                 }
-
-
             }
-
-
         }
     }
 }
 
 .hiddenToggle {
-
     display: none;
 }
 
@@ -103,7 +87,6 @@
         padding: 15px;
         align-items: center;
     }
-
     .headerNavList {
         position: absolute;
         top: 70px;
@@ -121,13 +104,11 @@
         padding-top: 10px;
         overflow: auto;
         padding: 0;
-
         li {
             border-top: 1px solid rgb(123, 123, 123);
             display: block !important;
             width: 100%;
             padding: 15px;
-
             .active {
                 color: rgb(13, 106, 255);
                 padding-bottom: 0 !important;
@@ -135,39 +116,30 @@
                 padding-right: 0 !important;
                 border-bottom: 0px !important;
             }
-
             .hiddenToggle:checked+ul {
                 display: block !important;
             }
-
             &:target {
                 pointer-events: none;
-
                 >a {
-
                     opacity: .6;
                 }
-
                 ul {
                     display: block;
-
                     li {
                         padding: 20px;
                     }
                 }
             }
-
             a {
                 text-decoration: none;
                 color: inherit;
                 // padding-left: 20px;
-
                 &:hover {
                     opacity: .6;
                     transition: opacity .3s linear;
                 }
             }
-
             ul {
                 display: none;
                 position: static !important;
@@ -179,13 +151,8 @@
                 box-shadow: 0 20px 48px #2c2b300d;
                 border: 1px solid rgb(248, 248, 248);
             }
-
-
         }
-
-
     }
-
     .headerNavList.showSideBar {
         left: 0;
     }
