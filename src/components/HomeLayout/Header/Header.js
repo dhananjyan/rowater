@@ -13,18 +13,23 @@ export default function Header() {
     const pathname = usePathname();
     const isMobile = useIsMobile();
     const scrollPosition = useScrollPosition();
-    const [toggle, setToggle] = useState(isMobile ? false : true);
+    const [toggle, setToggle] = useState(true);
     const [isSideBarOpen, setIsSideBarOpen] = useState(false);
 
     const handleToggle = () => {
-        if(!isMobile) return;
+        if (!isMobile) return;
         setToggle(i => !i);
-    }
+    };
+
+    useEffect(() => {
+      setToggle(isMobile ? false : true)
+    }, [isMobile])
     
+
 
     return (
         <header className={cx(s.header, { [s.headerScrolled]: (scrollPosition > 0) })}>
-            <nav className={s.headerNav}>
+            <nav className={cx(s.headerNav, { [s.sideBarOpened]: isSideBarOpen })}>
                 <div className={s.logo}>LOGO</div>
                 {isMobile ? <div className={s.mobileIcon} onClick={() => setIsSideBarOpen(i => !i)} role="button">
                     {isSideBarOpen ? <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
@@ -40,15 +45,15 @@ export default function Header() {
                         })}>Home</Link>
                     </li>
                     <li>
-
                         <Link
-                            href="#"
-                            onClick={handleToggle}
+                            href="/products"
                             className={cx({
                                 [s.active]: pathname?.includes("/products")
-                            })}>Products {isMobile ? <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                            })}>Products </Link>{!isMobile ? <span role="button" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                            </svg> : ""}</Link>
+                            </svg></span> : <span role="button" onClick={handleToggle}><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                            </svg></span>}
                         <input type="checkbox" checked={toggle} className={s.hiddenToggle} />
                         {toggle && <ul>
                             <li><Link href="/products/ro-system">RO System</Link></li>

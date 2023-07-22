@@ -23,7 +23,7 @@
             padding: 30px 30px 30px 15px;
         }
         .mobileIcon {
-            display: none;
+            // display: none;
         }
         .headerNavList {
             display: flex;
@@ -49,7 +49,9 @@
                     ul {
                         display: block;
                         li {
-                            padding: 10px;
+                            color: black;
+                            // padding: 10px;
+                            padding-bottom: 15px;
                         }
                     }
                 }
@@ -87,6 +89,10 @@
         padding: 15px;
         align-items: center;
     }
+    .sideBarOpened {
+        background: white;
+        color: black;
+    }
     .headerNavList {
         position: absolute;
         top: 70px;
@@ -104,6 +110,7 @@
         padding-top: 10px;
         overflow: auto;
         padding: 0;
+        color: black;
         li {
             border-top: 1px solid rgb(123, 123, 123);
             display: block !important;
@@ -118,6 +125,8 @@
             }
             .hiddenToggle:checked+ul {
                 display: block !important;
+                width: 100%;
+                box-shadow: none;
             }
             &:target {
                 pointer-events: none;
