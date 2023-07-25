@@ -5,9 +5,9 @@ export default function Footer() {
     return (
         <footer className={cx(s.footer)}>
             <div className={s.footerFirstSection}>
-                <div className={"container py-5"}>
+                <div className={"container"}>
                     <div className='row'>
-                        <div className="col">
+                        <div className="col col-12 col-md-4 col-lg-4 my-4">
                             <h5>Company</h5>
                             <div>
                                 <div className={cx("pt-2")}>Request a call back</div>
@@ -17,7 +17,7 @@ export default function Footer() {
                                 <div className={cx("pt-2")}>Service we undertake</div>
                             </div>
                         </div>
-                        <div className="col">
+                        <div className="col col-12 col-md-4 col-lg-4 my-4">
                             <h5>Service</h5>
                             <div>
                                 <div className={cx("pt-2")}>Water purifier service</div>
@@ -29,7 +29,7 @@ export default function Footer() {
                                 <div className={cx("pt-2")}>Bad taste of water</div>
                             </div>
                         </div>
-                        <div className="col">
+                        <div className="col col-12 col-md-4 col-lg-4 my-4">
                             <h5>Contact us</h5>
                             <div>
                                 <div>Vinayga Engineering</div>

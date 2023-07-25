@@ -23,8 +23,12 @@ export default function ProductsWeOffer(props) {
                 // onSlideChange={() => console.log('slide change')}
                 // onSwiper={(swiper) => console.log(swiper)}
                 breakpoints={{
-                    640: {
-                        slidesPerView: 2,
+                    240: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    420: {
+                        slidesPerView:2,
                         spaceBetween: 20,
                     },
                     768: {
