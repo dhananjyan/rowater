@@ -9,8 +9,8 @@ export default function MainBanner() {
         <div className={s.mainBanner}>
             <div className={s.content}>
                 <div className={s.bannerTextArea}>
-                    <h1>His to een can to harold, are chaste dares mirth nor, start each and little felt can he said satiety.</h1>
-                    <p>Dolore sanctus gubergren magna rebum duo. Lorem accusam sanctus sea kasd rebum ipsum sed tempor. Amet ipsum dolor voluptua invidunt, diam ea magna amet elitr at et dolor et. Justo est sit sit sanctus amet magna ipsum, ea magna et stet sed et rebum lorem amet voluptua, lorem ea accusam.</p>
+                    <h1>Your Go-to Place For All Domestic & Commercial Water Purification Systems in Madurai</h1>
+                    <p>From domestic aqua guard RO purifier installation and service to commercial water plant installation - we do everything. We also provide spare parts for all domestic & commercial water purification appliances.</p>
                 </div>
                 <div className={s.bannerFormArea}>
                     <ContactForm />

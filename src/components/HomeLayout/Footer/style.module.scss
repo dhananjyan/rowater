@@ -3,7 +3,10 @@
     width: 100%;
     // display: flex;
     // justify-content: center;
-
+    .footerFirstSection {
+        background-color: rgb(103, 194, 221);
+        color: white;
+    }
     .footerContent {
         margin: auto;
         max-width: var(--max-width);

@@ -3,9 +3,16 @@ import s from "./style.module.scss";
 export default function About() {
     return (
         <div className="container">
-            <h3 className="mt-5 pb-2">About us</h3>
-            <p>Aquafresh Ro Company is certified by ISO 9001:2015 certificate. Our Domestic Ro Systems are: Aquapearl Ro (7 stages), Dolphin Ro (7 stages), Aquagrand+ Ro (10 stages) or Swift Ro (9 stages) commercial & Industrial Ro is also available in Best Prices in Delhi NCR & All over India.</p>
-            <p>Aquafresh Ro System is best water purifier company in India, we sales All type Ro systems like: Domestic Ro for home purpose & Commercial Ro for Bussiness purpose in Reasonable and Discount Prices, so that everyone can afford it & buy it easily. Aquafresh Ro Company give you option to Purchase All type of Ro Systems by Credit card, Debit card , Cheque, Demand Draft, Cash & Buy Online Net Banking.</p>
+            <h2 className="mt-5 pb-2">About us</h2>
+            <p>Welcome to Vinayaga Engineering - Your Water Purification Specialists in Madurai.</p>
+            <p>At Vinayaga Engineering, we take immense pride in being Madurai's leading service providers in domestic and commercial water RO purifier installation, servicing, and spare parts provision. Our mission is simple yet powerful - to ensure you have access to the purest and safest drinking water, be it in the comfort of your home or your business.</p>
+            <p>Why should you choose us? </p>
+            <ul>
+                <li>Timely delivery & service</li>
+                <li>Quality products</li>
+                <li>Tailored solutions</li>
+                <li>Proven customer service</li>
+            </ul>
         </div>
     )
 }
