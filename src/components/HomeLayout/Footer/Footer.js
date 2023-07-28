@@ -32,7 +32,7 @@ export default function Footer() {
                         <div className="col col-12 col-md-4 col-lg-4 my-4">
                             <h5>Contact us</h5>
                             <div>
-                                <div>Vinayga Engineering</div>
+                                <div>Vinayaga Engineering</div>
                                 <div>152/IB, Arunjunai nagar,</div>
                                 <div>Avaniyapuram,</div>
                                 <div> Madurai - 625009.</div>
