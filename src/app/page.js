@@ -13,7 +13,10 @@ export default function Home() {
   return (
     <HomeLayout className={s.hello}>
       <MainBanner />
-      <About />
+      <section id="aboutUs">
+
+        <About />
+      </section>
       <ProductsWeOffer title="Products we offer" data={data?.productWeOffer} />
       <ProductsWeOffer title="Wholesale dealers of" data={data?.wholeSaleDealerOf} />
       <ProductsWeOffer title="Services we undertake" data={data?.serviceWeUndertake} />

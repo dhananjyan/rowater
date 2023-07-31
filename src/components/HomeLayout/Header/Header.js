@@ -22,9 +22,9 @@ export default function Header() {
     };
 
     useEffect(() => {
-      setToggle(isMobile ? false : true)
+        setToggle(isMobile ? false : true)
     }, [isMobile])
-    
+
 
 
     return (
@@ -44,7 +44,7 @@ export default function Header() {
                             [s.active]: pathname === "/"
                         })}>Home</Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link
                             href="/products"
                             className={cx({
@@ -69,13 +69,19 @@ export default function Header() {
                             <li><Link href="/">RO Filter</Link></li>
                             <li><Link href="/">UF Membrane</Link></li>
                         </ul>}
-                    </li>
-                    <li><Link href="/about-us" className={cx({
-                        [s.active]: pathname === "/about-us"
+                    </li> */}
+                    <li><Link href="/#aboutUs" className={cx({
+                        [s.active]: pathname?.includes("aboutUs")
                     })}>About Us</Link></li>
-                    <li><Link href="/contact-us" className={cx({
-                        [s.active]: pathname === "/contact-us"
-                    })}>Contact Us</Link></li>
+                    <li><Link href="/#products" className={cx({
+                        [s.active]: pathname?.includes("products")
+                    })}>Products</Link></li>
+                    <li><Link href="/#wholesale" className={cx({
+                        [s.active]: pathname?.includes("wholesale")
+                    })}>Wholesale</Link></li>
+                    <li><Link href="/#services" className={cx({
+                        [s.active]: pathname?.includes("services")
+                    })}>Services</Link></li>
                 </ul>
             </nav>
         </header>
