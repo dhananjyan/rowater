@@ -1,13 +1,14 @@
 "use client"
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, use, useParams } from "next/navigation";
 
 import cx from "classname";
 import s from "./style.module.scss";
 
 import useIsMobile from "@/hooks/useIsMobile";
 import useScrollPosition from "@/hooks/useScrollPosition";
+import { useRouter } from "next/navigation";
 
 export default function Header() {
     const pathname = usePathname();
@@ -15,7 +16,6 @@ export default function Header() {
     const scrollPosition = useScrollPosition();
     const [toggle, setToggle] = useState(true);
     const [isSideBarOpen, setIsSideBarOpen] = useState(false);
-
     const handleToggle = () => {
         if (!isMobile) return;
         setToggle(i => !i);
@@ -25,12 +25,17 @@ export default function Header() {
         setToggle(isMobile ? false : true)
     }, [isMobile])
 
-
+    useEffect(() => {
+        if (window.location.hash?.length !== 0) {
+            window.scrollTo(window.scrollX, window.scrollY - 100);
+            history.pushState({}, "", " ")
+        }
+    }, [window.location.hash]);
 
     return (
         <header className={cx(s.header, { [s.headerScrolled]: (scrollPosition > 0) })}>
             <nav className={cx(s.headerNav, { [s.sideBarOpened]: isSideBarOpen })}>
-                <div className={s.logo}>LOGO</div>
+                <div className={s.logo}>VE</div>
                 {isMobile ? <div className={s.mobileIcon} onClick={() => setIsSideBarOpen(i => !i)} role="button">
                     {isSideBarOpen ? <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
                         <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
@@ -40,15 +45,15 @@ export default function Header() {
                 </div> : ""}
                 <ul className={cx(s.headerNavList, { [s.showSideBar]: isSideBarOpen })}>
                     <li>
-                        <Link href="/" className={cx({
-                            [s.active]: pathname === "/"
+                        <Link href="#" className={cx({
+                            [s.actives]: pathname === "/"
                         })}>Home</Link>
                     </li>
                     {/* <li>
                         <Link
                             href="/products"
                             className={cx({
-                                [s.active]: pathname?.includes("/products")
+                                [s.actives ]: pathname?.includes("/products")
                             })}>Products </Link>{!isMobile ? <span role="button" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                             </svg></span> : <span role="button" onClick={handleToggle}><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
@@ -70,17 +75,17 @@ export default function Header() {
                             <li><Link href="/">UF Membrane</Link></li>
                         </ul>}
                     </li> */}
-                    <li><Link href="/#aboutUs" className={cx({
-                        [s.active]: pathname?.includes("aboutUs")
+                    <li><Link href="#about-us" className={cx({
+                        [s.actives]: pathname?.includes("aboutUs")
                     })}>About Us</Link></li>
-                    <li><Link href="/#products" className={cx({
-                        [s.active]: pathname?.includes("products")
+                    <li><Link href="#products" className={cx({
+                        [s.actives]: pathname?.includes("products")
                     })}>Products</Link></li>
-                    <li><Link href="/#wholesale" className={cx({
-                        [s.active]: pathname?.includes("wholesale")
+                    <li><Link href="#wholesale" className={cx({
+                        [s.actives]: pathname?.includes("wholesale")
                     })}>Wholesale</Link></li>
-                    <li><Link href="/#services" className={cx({
-                        [s.active]: pathname?.includes("services")
+                    <li><Link href="#services" className={cx({
+                        [s.actives]: pathname?.includes("services")
                     })}>Services</Link></li>
                 </ul>
             </nav>

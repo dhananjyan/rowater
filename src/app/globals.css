@@ -51,3 +51,8 @@
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
 }
+
+
+html {
+  scroll-behavior: smooth;
+}

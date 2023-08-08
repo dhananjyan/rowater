@@ -1,100 +1,103 @@
 {
-    "productWeOffer": [{
-            "imgSrc": "https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg",
+    "productWeOffer": [
+        {
+            "imgSrc": "/images/aqua-gruard-ro-purifier.webp",
             "name": "Aqua guard - RO Purifier"
         },
         {
-            "imgSrc": "https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg",
+            "imgSrc": "/images/water-softner.jpg",
             "name": "Water softener"
         },
         {
-            "imgSrc": "https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg",
+            "imgSrc": "/images/iron-remover.webp",
             "name": "Iron remover"
         },
         {
-            "imgSrc": "https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg",
+            "imgSrc": "/images/water-dispenser.jpg",
             "name": "Water dispenser"
         },
         {
-            "imgSrc": "https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg",
+            "imgSrc": "/images/dolphin-water-purifier.webp",
             "name": "Dolphin aqua care - RO Purifier"
         },
         {
-            "imgSrc": "https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg",
+            "imgSrc": "/images/aqua-gruard-ro-purifier.webp",
             "name": "Domestic water purifier"
         },
         {
-            "imgSrc": "https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg",
+            "imgSrc": "/images/comercial-water-purifier.jpg",
             "name": "Commercial water purifier"
         },
         {
-            "imgSrc": "https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg",
+            "imgSrc": "/images/uv-purifier.jpg",
             "name": "UV purifier"
         }
     ],
-    "wholeSaleDealerOf": [{
-            "imgSrc": "https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg",
+    "wholeSaleDealerOf": [
+        {
+            "imgSrc": "/images/1000-lph-ro-plant.jpg",
             "name": "1000 LPH RO Water Plant"
         },
         {
-            "imgSrc": "https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg",
+            "imgSrc": "/images/250-lph-ro-plant.jpg",
             "name": "250 LPH RO Water Plant"
         },
         {
-            "imgSrc": "https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg",
+            "imgSrc": "/images/e-flow-pump.webp",
             "name": "E-Flow pump"
         },
         {
-            "imgSrc": "https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg",
+            "imgSrc": "/images/cri-pumps.jpg",
             "name": "CRI pump"
         },
         {
-            "imgSrc": "https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg",
+            "imgSrc": "dddd",
             "name": "Otayo membrane"
         },
         {
-            "imgSrc": "https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg",
+            "imgSrc": "dddd",
             "name": "Skid and domestic water plant stand"
         },
         {
-            "imgSrc": "https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg",
+            "imgSrc": "dddd",
             "name": "Algo pumps"
         },
         {
-            "imgSrc": "https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg",
+            "imgSrc": "dddd",
             "name": "Speed pumps"
         },
         {
-            "imgSrc": "https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg",
+            "imgSrc": "dddd",
             "name": "Hot, Cold, & Normal water dispenser"
         }
     ],
-    "serviceWeUndertake": [{
-            "imgSrc": "https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg",
+    "serviceWeUndertake": [
+        {
+            "imgSrc": "dddd",
             "name": "Water purifier service"
         },
         {
-            "imgSrc": "https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg",
+            "imgSrc": "dddd",
             "name": "Water leakage fixing"
         },
         {
-            "imgSrc": "https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg",
+            "imgSrc": "dddd",
             "name": "RO purifier noise & vibrations fixing"
         },
         {
-            "imgSrc": "https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg",
+            "imgSrc": "dddd",
             "name": "Excess reject water fixing"
         },
         {
-            "imgSrc": "https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg",
+            "imgSrc": "dddd",
             "name": "Low water flow"
         },
         {
-            "imgSrc": "https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg",
+            "imgSrc": "dddd",
             "name": "Auto shut-off failure"
         },
         {
-            "imgSrc": "https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg",
+            "imgSrc": "dddd",
             "name": "Bad taste of water"
         }
     ]
