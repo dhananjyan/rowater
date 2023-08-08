@@ -34,6 +34,10 @@ export default function Header() {
         }
     }, [params]);
 
+    const handleMenuClick = () => {
+        setIsSideBarOpen(false)
+    }
+
     return (
         <header className={cx(s.header, { [s.headerScrolled]: (scrollPosition > 0) })}>
             <nav className={cx(s.headerNav, { [s.sideBarOpened]: isSideBarOpen })}>
@@ -47,12 +51,12 @@ export default function Header() {
                 </div> : ""}
                 <ul className={cx(s.headerNavList, { [s.showSideBar]: isSideBarOpen })}>
                     <li>
-                        <Link href="#" className={cx({
+                        <Link onClick={handleMenuClick} href="#" className={cx({
                             [s.actives]: pathname === "/"
                         })}>Home</Link>
                     </li>
                     {/* <li>
-                        <Link
+                        <Link onClick={handleMenuClick}
                             href="/products"
                             className={cx({
                                 [s.actives ]: pathname?.includes("/products")
@@ -63,30 +67,30 @@ export default function Header() {
                             </svg></span>}
                         <input type="checkbox" checked={toggle} className={s.hiddenToggle} />
                         {toggle && <ul>
-                            <li><Link href="/products/ro-system">RO System</Link></li>
-                            <li><Link href="/">RO Cabinet</Link></li>
-                            <li><Link href="/">Reverse Osmosis System</Link></li>
-                            <li><Link href="/">Touch Less Hand Sanitizer</Link></li>
-                            <li><Link href="/">Commercial RO System</Link></li>
-                            <li><Link href="/">Industrial RO System</Link></li>
-                            <li><Link href="/">Water Softener</Link></li>
-                            <li><Link href="/">UV Purifier</Link></li>
-                            <li><Link href="/">RO Water Purifier Body</Link></li>
-                            <li><Link href="/">RO Accessories</Link></li>
-                            <li><Link href="/">RO Filter</Link></li>
-                            <li><Link href="/">UF Membrane</Link></li>
+                            <li><Link onClick={handleMenuClick} href="/products/ro-system">RO System</Link></li>
+                            <li><Link onClick={handleMenuClick} href="/">RO Cabinet</Link></li>
+                            <li><Link onClick={handleMenuClick} href="/">Reverse Osmosis System</Link></li>
+                            <li><Link onClick={handleMenuClick} href="/">Touch Less Hand Sanitizer</Link></li>
+                            <li><Link onClick={handleMenuClick} href="/">Commercial RO System</Link></li>
+                            <li><Link onClick={handleMenuClick} href="/">Industrial RO System</Link></li>
+                            <li><Link onClick={handleMenuClick} href="/">Water Softener</Link></li>
+                            <li><Link onClick={handleMenuClick} href="/">UV Purifier</Link></li>
+                            <li><Link onClick={handleMenuClick} href="/">RO Water Purifier Body</Link></li>
+                            <li><Link onClick={handleMenuClick} href="/">RO Accessories</Link></li>
+                            <li><Link onClick={handleMenuClick} href="/">RO Filter</Link></li>
+                            <li><Link onClick={handleMenuClick} href="/">UF Membrane</Link></li>
                         </ul>}
                     </li> */}
-                    <li><Link href="#about-us" className={cx({
+                    <li><Link onClick={handleMenuClick} href="#about-us" className={cx({
                         [s.actives]: pathname?.includes("aboutUs")
                     })}>About Us</Link></li>
-                    <li><Link href="#products" className={cx({
+                    <li><Link onClick={handleMenuClick} href="#products" className={cx({
                         [s.actives]: pathname?.includes("products")
                     })}>Products</Link></li>
-                    <li><Link href="#wholesale" className={cx({
+                    <li><Link onClick={handleMenuClick} href="#wholesale" className={cx({
                         [s.actives]: pathname?.includes("wholesale")
                     })}>Wholesale</Link></li>
-                    <li><Link href="#services" className={cx({
+                    <li><Link onClick={handleMenuClick} href="#services" className={cx({
                         [s.actives]: pathname?.includes("services")
                     })}>Services</Link></li>
                 </ul>
