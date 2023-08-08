@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { usePathname, use, useParams } from "next/navigation";
+import { usePathname, useParams } from "next/navigation";
 
 import cx from "classname";
 import s from "./style.module.scss";
@@ -12,6 +12,8 @@ import { useRouter } from "next/navigation";
 
 export default function Header() {
     const pathname = usePathname();
+    const params = useParams();
+
     const isMobile = useIsMobile();
     const scrollPosition = useScrollPosition();
     const [toggle, setToggle] = useState(true);
@@ -30,7 +32,7 @@ export default function Header() {
             window.scrollTo(window.scrollX, window.scrollY - 100);
             history.pushState({}, "", " ")
         }
-    }, [window.location.hash]);
+    }, [params]);
 
     return (
         <header className={cx(s.header, { [s.headerScrolled]: (scrollPosition > 0) })}>
