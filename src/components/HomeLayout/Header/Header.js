@@ -40,7 +40,7 @@ export default function Header() {
             <nav className={cx(s.headerNav, { [s.sideBarOpened]: isSideBarOpen })}>
                 <div className={s.logo}>
                     <img src="/logo.png" />
-                    <div>Vinayaga<br />Engineering</div>
+                    <h1>Vinayaga<br />Engineering</h1>
                 </div>
                 {isMobile ? <div className={s.mobileIcon} onClick={() => setIsSideBarOpen(i => !i)} role="button">
                     {isSideBarOpen ? <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">

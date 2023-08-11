@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className={s.parent}>
       <Head>
-        <title>Domestic & Commercial RO Water Purifier Dealer in Madurai</title>
+        <title>Domestic & Commercial RO Water Purifier Dealer in Madurai | Vinayaga Engineering</title>
         <meta
           name="description"
           content="We offer everything you need to get pure water from domestic RO water purifier, dispenser, CRI pumps, to industrial & commercial water plants & spare parts."
