@@ -46,7 +46,7 @@ export default function Footer() {
                                 <div>Vinayaga Engineering</div>
                                 <div>152/IB, Arunjunai nagar,</div>
                                 <div>Avaniyapuram,</div>
-                                <div> Madurai - 625009.</div>
+                                <div> Madurai - 625012.</div>
                                 <div>Mobile number: 9942188199</div>
                                 <div>Email: vinayaengineeringro@gmail.com</div>
                             </div>
