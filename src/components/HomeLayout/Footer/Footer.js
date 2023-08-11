@@ -1,7 +1,18 @@
+import { useRouter } from 'next/router';
 import s from './style.module.scss';
 import cx from "classname";
 
 export default function Footer() {
+    const router = useRouter();
+
+    const handleMenuClick = (id) => {
+        const container = document.getElementById(id);
+        if (container) {
+            const yOffset = -100; // Replace with your desired offset
+            const y = container.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+    }
     return (
         <footer className={cx(s.footer)}>
             <div className={s.footerFirstSection}>
@@ -10,11 +21,11 @@ export default function Footer() {
                         <div className="col col-12 col-md-4 col-lg-4 my-4">
                             <h5>Company</h5>
                             <div>
-                                <div className={cx("pt-2")}>Request a call back</div>
-                                <div className={cx("pt-2")}>About us</div>
-                                <div className={cx("pt-2")}>Product we offer</div>
-                                <div className={cx("pt-2")}>Wholesale dealer of</div>
-                                <div className={cx("pt-2")}>Service we undertake</div>
+                                <div role="button" onClick={() => router.push('/')} className={cx("pt-2")}>Request a call back</div>
+                                <div role="button" onClick={() => handleMenuClick("about-us")} className={cx("pt-2")}>About us</div>
+                                <div role="button" onClick={() => handleMenuClick("products")} className={cx("pt-2")}>Product we offer</div>
+                                <div role="button" onClick={() => handleMenuClick("wholesale")} className={cx("pt-2")}>Wholesale dealer of</div>
+                                <div role="button" onClick={() => handleMenuClick("services")} className={cx("pt-2")}>Service we undertake</div>
                             </div>
                         </div>
                         <div className="col col-12 col-md-4 col-lg-4 my-4">

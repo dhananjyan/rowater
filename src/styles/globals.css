@@ -1,0 +1,91 @@
+:root {
+  --max-width: 1200px;
+
+
+  font-size: 1rem;
+
+
+
+
+
+
+
+
+
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  --primary-glow: conic-gradient(from 180deg at 50% 50%,
+      #16abff33 0deg,
+      #0885ff33 55deg,
+      #54d6ff33 120deg,
+      #0071ff33 160deg,
+      transparent 360deg);
+  --secondary-glow: radial-gradient(rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0));
+
+  --tile-start-rgb: 239, 245, 249;
+  --tile-end-rgb: 228, 232, 233;
+  --tile-border: conic-gradient(#00000080,
+      #00000040,
+      #00000030,
+      #00000020,
+      #00000010,
+      #00000010,
+      #00000080);
+
+  --callout-rgb: 238, 240, 241;
+  --callout-border-rgb: 172, 175, 176;
+  --card-rgb: 180, 185, 188;
+  --card-border-rgb: 131, 134, 135;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
+  font-kerning: normal;
+  word-wrap: break-word;
+  font-feature-settings: "kern", "liga", "clig", "calt";
+  color: #000000cc;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  margin: 35px 0 0;
+  word-spacing: 4px;
+  letter-spacing: .9px;
+  /* line-height: 30px; */
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-weight: 400 !important;
+  color: rgb(184, 184, 184) !important;
+  opacity: .9 !important;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-weight: 400 !important;
+  color: rgb(184, 184, 184) !important;
+  opacity: .9 !important;
+  /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  font-weight: 400 !important;
+  color: rgb(184, 184, 184) !important;
+  opacity: .9 !important;
+  /* Firefox */
+}

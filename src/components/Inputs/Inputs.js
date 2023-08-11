@@ -4,7 +4,7 @@ import { Form } from 'react-bootstrap';
 import cx from "classname";
 
 export default function Inputs(props) {
-    const { label, mutedText, type = "text", placeholder, register, name, inputClassName="", inputGroupClassname="" } = props || {};
+    const { label, mutedText, validation = {}, type = "text", placeholder, register, name, inputClassName = "", inputGroupClassname = "" } = props || {};
     const additionalAttributes = {};
     if (type == "textarea") {
         additionalAttributes.as = "textarea";
@@ -13,7 +13,7 @@ export default function Inputs(props) {
     return (
         <Form.Group className={cx(inputGroupClassname)} controlId="formBasicEmail">
             {label ? <Form.Label>{label}</Form.Label> : ""}
-            <Form.Control className={inputClassName} {...additionalAttributes} placeholder={placeholder}  {...register(name)} />
+            <Form.Control className={inputClassName} {...additionalAttributes} placeholder={placeholder}  {...register(name, validation)} />
             {mutedText ? <Form.Text className="text-muted">{mutedText}</Form.Text> : ""}
         </Form.Group>
     )

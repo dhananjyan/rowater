@@ -1,4 +1,7 @@
 export default {
-    siteName: process.env.NEXT_PUBLIC_SITE_NAME,
-    siteDescription: process.env.NEXT_PUBLIC_SITE_DESC
+    gmail: {
+        user: process.env.MAIL_USERNAME,
+        pass: process.env.MAIL_PASSWORD,
+        email: process.env.REQUEST_EMAIL
+    }
 }

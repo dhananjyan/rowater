@@ -14,21 +14,20 @@ export default function ProductsWeOffer(props) {
     const { title, data = [] } = props;
     return (
         <div className='container' >
-            <h3 className='mt-5 pb-2'>{title}</h3>
+            <h3 className='mt-5 py-2'>{title}</h3>
+            <div className={s.underline} />
             <Swiper
                 spaceBetween={50}
                 slidesPerView={4}
                 navigation
                 modules={[Navigation]}
-                // onSlideChange={() => console.log('slide change')}
-                // onSwiper={(swiper) => console.log(swiper)}
                 breakpoints={{
                     240: {
                         slidesPerView: 1,
                         spaceBetween: 20,
                     },
                     420: {
-                        slidesPerView:2,
+                        slidesPerView: 2,
                         spaceBetween: 20,
                     },
                     768: {
@@ -56,76 +55,6 @@ export default function ProductsWeOffer(props) {
                 })}
 
             </Swiper>
-            {/* <div className='d-flex flex-wrap gap-3 justify-content-center'>
-
-            </div> */}
-
-            {/* 
-            <Swiper
-                spaceBetween={50}
-                slidesPerView={1}
-                navigation
-                modules={[Navigation]}
-                // onSlideChange={() => console.log('slide change')}
-                // onSwiper={(swiper) => console.log(swiper)}
-
-                breakpoints={{
-                    640: {
-                        slidesPerView: 2,
-                        spaceBetween: 20,
-                    },
-                    768: {
-                        slidesPerView: 3,
-                        spaceBetween: 40,
-                    },
-                    1024: {
-                        slidesPerView: 4,
-                        spaceBetween: 50,
-                    },
-                }}
-            >
-                <SwiperSlide>
-                    <div className={s.productCard}>
-                        <div className={s.image}>
-                            <img src="https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg" /></div>
-
-                        <div className={s.description}>Aquafresh Ro Company is certified by ISO 9001:2015 certificate. Our Domestic Ro Systems are </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-
-                    <div className={s.productCard}>
-                        <div className={s.image}>
-                            <img src="https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg" /></div>
-                        <div className={s.title}>asdfadsfasf</div>
-                        <div className={s.description}>Aquafresh Ro Company is certified by ISO 9001:2015 certificate. Our Domestic Ro Systems are </div>
-                        <div>View more</div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-
-                    <div className={s.productCard}>
-                        <div className={s.image}>
-                            <img src="https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg" /></div>
-                        <div className={s.title}>asdfadsfasf</div>
-                        <div className={s.description}>Aquafresh Ro Company is certified by ISO 9001:2015 certificate. Our Domestic Ro Systems are </div>
-                        <div>View more</div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-
-                    <div className={s.productCard}>
-                        <div className={s.image}>
-                            <img src="https://5.imimg.com/data5/VV/FT/RJ/SELLER-2802470/mineral-water-treatment-plant-250x250.jpg" /></div>
-                        <div className={s.title}>asdfadsfasf</div>
-                        <div className={s.description}>Aquafresh Ro Company is certified by ISO 9001:2015 certificate. Our Domestic Ro Systems are </div>
-                        <div>View more</div>
-                    </div>
-                </SwiperSlide>
-            </Swiper> */}
-
-
-            {/* </div> */}
         </div>
     )
 }
