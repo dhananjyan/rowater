@@ -51,53 +51,53 @@
             "name": "CRI pump"
         },
         {
-            "imgSrc": "dddd",
+            "imgSrc": "/images/otayo-membrane.jpg",
             "name": "Otayo membrane"
         },
         {
-            "imgSrc": "dddd",
+            "imgSrc": "/images/ro-plant-stand.jpg",
             "name": "Skid and domestic water plant stand"
         },
         {
-            "imgSrc": "dddd",
+            "imgSrc": "/images/algo-pumps.webp",
             "name": "Algo pumps"
         },
         {
-            "imgSrc": "dddd",
+            "imgSrc": "/images/speed-pumps.jpg",
             "name": "Speed pumps"
         },
         {
-            "imgSrc": "dddd",
+            "imgSrc": "/images/water-dispenser.jpg",
             "name": "Hot, Cold, & Normal water dispenser"
         }
     ],
     "serviceWeUndertake": [
         {
-            "imgSrc": "dddd",
+            "imgSrc": "/images/water-purifier.jpg",
             "name": "Water purifier service"
         },
         {
-            "imgSrc": "dddd",
+            "imgSrc": "/images/water-leakage-service.jpg",
             "name": "Water leakage fixing"
         },
         {
-            "imgSrc": "dddd",
+            "imgSrc": "/images/noise_vibration_fixing.jpg",
             "name": "RO purifier noise & vibrations fixing"
         },
         {
-            "imgSrc": "dddd",
+            "imgSrc": "/images/water_fixing.jpg",
             "name": "Excess reject water fixing"
         },
         {
-            "imgSrc": "dddd",
+            "imgSrc": "/images/low_water_flow.jpg",
             "name": "Low water flow"
         },
         {
-            "imgSrc": "dddd",
+            "imgSrc": "/images/auto_shut_off.jpg",
             "name": "Auto shut-off failure"
         },
         {
-            "imgSrc": "dddd",
+            "imgSrc": "/images/bad_taste.jpg",
             "name": "Bad taste of water"
         }
     ]

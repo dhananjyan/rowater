@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head >
-        <meta name="robots" content="noindex" />
         <link rel="canonical" href="https://vinayagawaterpurifiers.com/"/>
       </Head>
       <body>
