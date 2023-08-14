@@ -20,6 +20,8 @@ export default function Footer() {
                     <div className='row'>
                         <div className="col col-12 col-md-4 col-lg-4 my-4">
                             <h5>Company</h5>
+                            <p>A water purification specialists in Madurai you can trust. At Vinayaga Engineering, we offer both commercial & domestic water purifier systems.
+                            </p>
                             <div>
                                 <div role="button" onClick={() => router.push('/')} className={cx("pt-2")}>Request a call back</div>
                                 <div role="button" onClick={() => handleMenuClick("about-us")} className={cx("pt-2")}>About us</div>
@@ -29,7 +31,7 @@ export default function Footer() {
                             </div>
                         </div>
                         <div className="col col-12 col-md-4 col-lg-4 my-4">
-                            <h5>Service</h5>
+                            <h5>Location we serve</h5>
                             <div>
                                 <div className={cx("pt-2")}>Water purifier service</div>
                                 <div className={cx("pt-2")}>Water leakage fixing</div>

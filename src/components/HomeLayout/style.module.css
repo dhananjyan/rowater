@@ -4,8 +4,50 @@
     min-height: 100vh;
     position: relative;
     width: 100%;
+    position: relative;
 }
 
 .main {
     flex-grow: 1;
+}
+
+.phone, .whatsappIcon {
+    position: fixed;
+    right: 0;
+    z-index: 100;
+    background: white;
+    padding: 10px;
+    top: 200px;
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 10px 0px 0px 10px;
+    line-height: .9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* div {
+      
+    }
+    span {
+      display: block;
+    } */
+}
+
+.whatsappIcon {
+top: 410px;
+background-color: #25d366;
+border-color: #25d366;
+margin: 2px;
+color: white;
+border-radius: 50px;
+}
+
+.phone a {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.phone span {
+    display: block;
 }

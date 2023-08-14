@@ -87,9 +87,9 @@ export default function Header() {
                     <li><p role="button" onClick={() => handleMenuClick("products")} href="#products" className={cx({
                         [s.actives]: pathname?.includes("products")
                     })}>Products</p></li>
-                    <li><p role="button" onClick={() => handleMenuClick("wholesale")} href="#wholesale" className={cx({
+                    {/* <li><p role="button" onClick={() => handleMenuClick("wholesale")} href="#wholesale" className={cx({
                         [s.actives]: pathname?.includes("wholesale")
-                    })}>Wholesale</p></li>
+                    })}>Wholesale</p></li> */}
                     <li><p role="button" onClick={() => handleMenuClick("services")} href="#services" className={cx({
                         [s.actives]: pathname?.includes("services")
                     })}>Services</p></li>
