@@ -1,104 +1,138 @@
 {
+    "bannerTitle": "Your Go-to Place For All Domestic & Commercial Water Purification Systems in Madurai",
+    "bannerDesc": "From domestic aqua guard RO purifier installation and service to commercial water plant installation - we do everything. We also provide spare parts for all domestic & commercial water purification appliances.",
     "productWeOffer": [
         {
+            "slug": "aqua-guard-ro-purifier",
             "imgSrc": "/images/aqua-gruard-ro-purifier.webp",
-            "name": "Aqua guard - RO Purifier"
+            "name": "Aqua guard - RO Purifier",
+            "title": "Aqua guard - RO Purifier"
         },
         {
+            "slug": "water-softner",
             "imgSrc": "/images/water-softner.jpg",
-            "name": "Water softener"
+            "name": "Water softener",
+            "title": "Water softener"
         },
         {
+            "slug": "iron-remover",
             "imgSrc": "/images/iron-remover.webp",
-            "name": "Iron remover"
+            "name": "Iron remover",
+            "title": "Iron remover"
         },
         {
+            "slug": "water-dispenser",
             "imgSrc": "/images/water-dispenser.jpg",
-            "name": "Water dispenser"
+            "name": "Water dispenser",
+            "title": "Water dispenser"
         },
         {
+            "slug": "dolphin-aqua-care-ro-purifier",
             "imgSrc": "/images/dolphin-water-purifier.webp",
-            "name": "Dolphin aqua care - RO Purifier"
+            "name": "Dolphin aqua care - RO Purifier",
+            "title": "Dolphin aqua care - RO Purifier"
         },
         {
+            "slug": "domestic-water-purifier",
             "imgSrc": "/images/aqua-gruard-ro-purifier.webp",
-            "name": "Domestic water purifier"
+            "name": "Domestic water purifier",
+            "title": "Domestic water purifier"
         },
         {
+            "slug": "commercial-water-purifier",
             "imgSrc": "/images/comercial-water-purifier.jpg",
-            "name": "Commercial water purifier"
+            "name": "Commercial water purifier",
+            "title": "Commercial water purifier"
         },
         {
+            "slug": "uv-purifier",
             "imgSrc": "/images/uv-purifier.jpg",
-            "name": "UV purifier"
+            "name": "UV purifier",
+            "title": "UV purifier"
         }
     ],
     "wholeSaleDealerOf": [
         {
             "imgSrc": "/images/1000-lph-ro-plant.jpg",
-            "name": "1000 LPH RO Water Plant"
+            "name": "1000 LPH RO Water Plant",
+            "title": "1000 LPH RO Water Plant"
         },
         {
             "imgSrc": "/images/250-lph-ro-plant.jpg",
-            "name": "250 LPH RO Water Plant"
+            "name": "250 LPH RO Water Plant",
+            "title": "250 LPH RO Water Plant"
         },
         {
             "imgSrc": "/images/e-flow-pump.webp",
-            "name": "E-Flow pump"
+            "name": "E-Flow pump",
+            "title": "E-Flow pump"
         },
         {
             "imgSrc": "/images/cri-pumps.jpg",
-            "name": "CRI pump"
+            "name": "CRI pump",
+            "title": "CRI pump"
         },
         {
             "imgSrc": "/images/otayo-membrane.jpg",
-            "name": "Otayo membrane"
+            "name": "Otayo membrane",
+            "title": "Otayo membrane"
         },
         {
             "imgSrc": "/images/ro-plant-stand.jpg",
-            "name": "Skid and domestic water plant stand"
+            "name": "Skid and domestic water plant stand",
+            "title": "Skid and domestic water plant stand"
         },
         {
             "imgSrc": "/images/algo-pumps.webp",
-            "name": "Algo pumps"
+            "name": "Algo pumps",
+            "title": "Algo pumps"
         },
         {
             "imgSrc": "/images/speed-pumps.jpg",
-            "name": "Speed pumps"
+            "name": "Speed pumps",
+            "title": "Speed pumps"
         },
         {
             "imgSrc": "/images/water-dispenser.jpg",
-            "name": "Hot, Cold, & Normal water dispenser"
+            "name": "Hot, Cold, & Normal water dispenser",
+            "title": "Hot, Cold, & Normal water dispenser"
         }
     ],
     "serviceWeUndertake": [
         {
             "imgSrc": "/images/water-purifier.jpg",
-            "name": "Water purifier service"
+            "name": "Water purifier service",
+            "title": "Water purifier service"
         },
         {
             "imgSrc": "/images/water-leakage-service.jpg",
-            "name": "Water leakage fixing"
+            "name": "Water leakage fixing",
+            "title": "Water leakage fixing"
         },
         {
             "imgSrc": "/images/noise_vibration_fixing.jpg",
-            "name": "RO purifier noise & vibrations fixing"
+            "name": "RO purifier noise & vibrations fixing",
+            "title": "RO purifier noise & vibrations fixing"
         },
         {
             "imgSrc": "/images/water_fixing.jpg",
-            "name": "Excess reject water fixing"
+            "name": "Excess reject water fixing",
+            "title": "Excess reject water fixing"
         },
         {
             "imgSrc": "/images/low_water_flow.jpg",
-            "name": "Low water flow"
+            "name": "Low water flow",
+            "title": "Low water flow"
         },
         {
             "imgSrc": "/images/auto_shut_off.jpg",
-            "name": "Auto shut-off failure"
+            "name": "Auto shut-off failure",
+            "title": "Auto shut-off failure"
         },
         {
             "imgSrc": "/images/bad_taste.jpg",
-            "name": "Bad taste of water"
+            "name": "Bad taste of water",
+            "title": "Bad taste of water"
         }
     ]
 }

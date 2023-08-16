@@ -7,6 +7,7 @@ import 'swiper/css/navigation';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
+import Image from 'next/image';
 
 
 
@@ -44,7 +45,7 @@ export default function ProductsWeOffer(props) {
                     return (<SwiperSlide key={`ITEM_${title}_${i}`}>
                         <div className={s.productCard}>
                             <div className={s.image}>
-                                <img src={item.imgSrc} />
+                                <Image src={item.imgSrc} alt={item?.name} fill />
                             </div>
                             <div className={s.name}>
                                 <h3 className={s.title}>{item?.name}</h3>

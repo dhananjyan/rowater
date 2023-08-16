@@ -4,13 +4,16 @@ import s from "./style.module.scss"
 import imgOne from "../../../public/images/one.jpeg"
 import ContactForm from "../ContactForm/ContactForm"
 
-export default function MainBanner() {
+export default function MainBanner(props) {
+    const { title, description } = props;
     return (
         <div className={s.mainBanner}>
             <div className={s.content}>
                 <div className={s.bannerTextArea}>
-                    <h1>Your Go-to Place For All Domestic & Commercial Water Purification Systems in Madurai</h1>
-                    <p>From domestic aqua guard RO purifier installation and service to commercial water plant installation - we do everything. We also provide spare parts for all domestic & commercial water purification appliances.</p>
+                    <h1>{title}</h1>
+                    <p>{description}</p>
+                    {/* <h1>Your Go-to Place For All Domestic & Commercial Water Purification Systems in Madurai</h1>
+                    <p>From domestic aqua guard RO purifier installation and service to commercial water plant installation - we do everything. We also provide spare parts for all domestic & commercial water purification appliances.</p> */}
                 </div>
                 <div className={s.bannerFormArea}>
                     <ContactForm />

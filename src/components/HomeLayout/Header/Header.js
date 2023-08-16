@@ -8,10 +8,14 @@ import s from "./style.module.scss";
 
 import useIsMobile from "@/hooks/useIsMobile";
 import useScrollPosition from "@/hooks/useScrollPosition";
+import { useRouter } from "next/router";
+
+
+import data from "../../../assets/data.json";
 
 export default function Header() {
     const pathname = usePathname();
-
+    const router = useRouter();
     const isMobile = useIsMobile();
     const scrollPosition = useScrollPosition();
     const [toggle, setToggle] = useState(true);
@@ -26,13 +30,16 @@ export default function Header() {
     }, [isMobile])
 
     const handleMenuClick = (id) => {
-        setIsSideBarOpen(false)
-        const container = document.getElementById(id);
-        if (container) {
-            const yOffset = -100; // Replace with your desired offset
-            const y = container.getBoundingClientRect().top + window.pageYOffset + yOffset;
-            window.scrollTo({ top: y, behavior: 'smooth' });
-        }
+        if (id)
+            router.push("/").then(() => {
+                setIsSideBarOpen(false)
+                const container = document.getElementById(id);
+                if (container) {
+                    const yOffset = -100; // Replace with your desired offset
+                    const y = container.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                    window.scrollTo({ top: y, behavior: 'smooth' });
+                }
+            })
     }
 
     return (
@@ -51,36 +58,37 @@ export default function Header() {
                 </div> : ""}
                 <ul className={cx(s.headerNavList, { [s.showSideBar]: isSideBarOpen })}>
                     <li>
-                        <Link onClick={handleMenuClick} href="/" className={cx({
+                        <Link onClick={() => handleMenuClick("/")} href="/" className={cx({
                             [s.actives]: pathname === "/"
                         })}>Home</Link>
                     </li>
-                    {/* <li>
-                        <Link onClick={handleMenuClick}
-                            href="/products"
+                    <li>
+                        <p onClick={handleToggle}
+                            // href="/products"
                             className={cx({
-                                [s.actives ]: pathname?.includes("/products")
-                            })}>Products </Link>{!isMobile ? <span role="button" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                [s.actives]: pathname?.includes("/products")
+                            })}>Products </p>{!isMobile ? <span role="button" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                             </svg></span> : <span role="button" onClick={handleToggle}><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                             </svg></span>}
                         <input type="checkbox" checked={toggle} className={s.hiddenToggle} />
                         {toggle && <ul>
-                            <li><Link onClick={handleMenuClick} href="/products/ro-system">RO System</Link></li>
-                            <li><Link onClick={handleMenuClick} href="/">RO Cabinet</Link></li>
-                            <li><Link onClick={handleMenuClick} href="/">Reverse Osmosis System</Link></li>
-                            <li><Link onClick={handleMenuClick} href="/">Touch Less Hand Sanitizer</Link></li>
-                            <li><Link onClick={handleMenuClick} href="/">Commercial RO System</Link></li>
-                            <li><Link onClick={handleMenuClick} href="/">Industrial RO System</Link></li>
-                            <li><Link onClick={handleMenuClick} href="/">Water Softener</Link></li>
-                            <li><Link onClick={handleMenuClick} href="/">UV Purifier</Link></li>
-                            <li><Link onClick={handleMenuClick} href="/">RO Water Purifier Body</Link></li>
-                            <li><Link onClick={handleMenuClick} href="/">RO Accessories</Link></li>
-                            <li><Link onClick={handleMenuClick} href="/">RO Filter</Link></li>
-                            <li><Link onClick={handleMenuClick} href="/">UF Membrane</Link></li>
+                            {data?.productWeOffer?.map(item => <li><Link onClick={handleMenuClick} href={`/product/${item?.slug}`}>{item?.name}</Link></li>)}
+                            {/* <li><Link onClick={handleMenuClick} href="/product/ro-system">RO System</Link></li>
+                            <li><Link onClick={handleMenuClick} href="/product/ro-cabinet">RO Cabinet</Link></li>
+                            <li><Link onClick={handleMenuClick} href="/product/reverse-osmosis-system">Reverse Osmosis System</Link></li>
+                            <li><Link onClick={handleMenuClick} href="/product/touch-less-hand-sanitizer">Touch Less Hand Sanitizer</Link></li>
+                            <li><Link onClick={handleMenuClick} href="/p    roduct/">Commercial RO System</Link></li>
+                            <li><Link onClick={handleMenuClick} href="/product/">Industrial RO System</Link></li>
+                            <li><Link onClick={handleMenuClick} href="/product/">Water Softener</Link></li>
+                            <li><Link onClick={handleMenuClick} href="/product/">UV Purifier</Link></li>
+                            <li><Link onClick={handleMenuClick} href="/product/">RO Water Purifier Body</Link></li>
+                            <li><Link onClick={handleMenuClick} href="/product/">RO Accessories</Link></li>
+                            <li><Link onClick={handleMenuClick} href="/product/">RO Filter</Link></li>
+                            <li><Link onClick={handleMenuClick} href="/product/">UF Membrane</Link></li> */}
                         </ul>}
-                    </li> */}
+                    </li>
                     <li><p role="button" onClick={() => handleMenuClick("about-us")} href="/#about-us" className={cx({
                         [s.actives]: pathname?.includes("aboutUs")
                     })}>About Us</p></li>

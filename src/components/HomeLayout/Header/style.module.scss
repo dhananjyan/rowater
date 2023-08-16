@@ -54,7 +54,9 @@
 
             li {
                 position: relative;
-                display: inline-block;
+                display: flex !important;
+                gap: 5px;
+                flex-wrap: wrap;
 
                 .active {
                     color: rgb(13, 106, 255);
@@ -93,6 +95,7 @@
                 }
 
                 ul {
+                    top: 100%;
                     display: none;
                     position: absolute;
                     background-color: #ffffff;
@@ -116,7 +119,7 @@
             .logo {
                 h1 {
                     font-size: 18px;
-padding-top: 10px;
+                    padding-top: 10px;
                 }
 
                 img {

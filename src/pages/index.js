@@ -4,12 +4,14 @@ import About from "@/components/About/About";
 import ProductsWeOffer from "@/components/ProductsWeOffer/ProductsWeOffer";
 import data from "../assets/data.json";
 import Head from "next/head";
-import s from "../styles/Home.module.css"
+import s from "../styles/Home.module.css";
 
+export const getServerSideProps = async () => {
+  return { props: { result: data } }
+}
 
-// import ServicesWeOffer from "@/components/ServicesWeOffer/ServicesWeOffer";
-
-export default function Home() {
+export default function Home({result}) {
+  
   return (
     <div className={s.parent}>
       <Head>
@@ -21,19 +23,18 @@ export default function Home() {
         />
       </Head>
       <HomeLayout >
-        <MainBanner />
+        <MainBanner title={result?.bannerTitle} description={result?.bannerDesc} />
         <section id="about-us">
-
           <About />
         </section>
         <section id="products">
-          <ProductsWeOffer title="Products we offer" data={data?.productWeOffer} />
+          <ProductsWeOffer title="Products we offer" data={result?.productWeOffer} />
         </section>
         <section id="wholesale">
-          <ProductsWeOffer title="Wholesale dealers of" data={data?.wholeSaleDealerOf} />
+          <ProductsWeOffer title="Wholesale dealers of" data={result?.wholeSaleDealerOf} />
         </section>
         <section id="services">
-          <ProductsWeOffer title="Services we undertake" data={data?.serviceWeUndertake} />
+          <ProductsWeOffer title="Services we undertake" data={result?.serviceWeUndertake} />
         </section>
       </HomeLayout>
     </div>
