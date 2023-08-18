@@ -16,7 +16,7 @@ export default function MainBanner() {
                     <ContactForm />
                 </div>
             </div>
-            <Image className={s.bgImg} src={imgOne} alt="Bgimage" />
+            <Image priority={true} className={s.bgImg} src={imgOne} alt="Bgimage" />
         </div>
     )
 }
