@@ -6,6 +6,9 @@ import data from "../assets/data.json";
 import Head from "next/head";
 import s from "../styles/Home.module.css"
 
+// const ProductsWeOffer = lazy(() => import('@/components/ProductsWeOffer/ProductsWeOffer'));
+
+
 
 // import ServicesWeOffer from "@/components/ServicesWeOffer/ServicesWeOffer";
 

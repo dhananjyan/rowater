@@ -8,6 +8,7 @@ import s from "./style.module.scss";
 
 import useIsMobile from "@/hooks/useIsMobile";
 import useScrollPosition from "@/hooks/useScrollPosition";
+import Image from "next/image";
 
 export default function Header() {
     const pathname = usePathname();
@@ -39,7 +40,7 @@ export default function Header() {
         <header className={cx(s.header, { [s.headerScrolled]: (scrollPosition > 0) })}>
             <nav className={cx(s.headerNav, { [s.sideBarOpened]: isSideBarOpen })}>
                 <div className={s.logo}>
-                    <img src="/logo.png" />
+                    <Image width={300} height={80} alt='LOGO' src="/logo.png" />
                     <h1>Vinayaga<br />Engineering</h1>
                 </div>
                 {isMobile ? <div className={s.mobileIcon} onClick={() => setIsSideBarOpen(i => !i)} role="button">
