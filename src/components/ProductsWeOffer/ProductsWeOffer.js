@@ -39,6 +39,7 @@ export default function ProductsWeOffer(props) {
             >
                 {data?.map((item, i) => {
                     return (<SwiperSlide key={`ITEM_${title}_${i}`}>
+                    
                         <div className={s.productCard}>
                             <div className={s.image}>
                                 <Image fill alt='slider img' src={item.imgSrc} />
