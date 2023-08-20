@@ -24,10 +24,10 @@ export default function SingleProduct({ result }) {
             </Head>
             <HomeLayout >
                 <MainBanner title={result.name} />
-                {result?.section?.map(section => {
-                    return (<div className={cx("container", "my-5")}>
+                {result?.section?.map((section, i) => {
+                    return (<div key={`SECTION_${i}`} className={cx("container", "my-5")}>
                         <h2>{section?.title}</h2>
-                        <div dangerouslySetInnerHTML={{__html: section?.content}} />
+                        <div dangerouslySetInnerHTML={{ __html: section?.content }} />
                     </div>)
                 })}
             </HomeLayout>
