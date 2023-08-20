@@ -6,7 +6,18 @@
             "slug": "aqua-guard-ro-purifier",
             "imgSrc": "/images/aqua-gruard-ro-purifier.webp",
             "name": "Aqua guard - RO Purifier",
-            "title": "Aqua guard - RO Purifier"
+            "metaTitle": "Aqua guard - RO Purifier",
+            "metaDesc": "This is the description",
+            "section": [
+                {
+                    "title": "Why we are the best Aqua guard - RO Purifier in Madurai?",
+                    "content": "<p>Hello How are&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>This is the sample text</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Hello</strong></p>"
+                },
+                {
+                    "title": "Why we are the best Aqua guard - RO Purifier in Madurai?",
+                    "content": "<p>Hello How are&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>This is the sample text</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Hello</strong></p>"
+                }
+            ]
         },
         {
             "slug": "water-softner",
