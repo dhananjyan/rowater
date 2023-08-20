@@ -1,7 +1,7 @@
 import Image from "next/image"
 import s from "./style.module.scss"
 
-import imgOne from "../../../public/images/one.jpeg"
+import imgOne from "../../../public/images/one.webp"
 import ContactForm from "../ContactForm/ContactForm"
 
 export default function MainBanner(props) {
@@ -19,7 +19,7 @@ export default function MainBanner(props) {
                     <ContactForm />
                 </div>
             </div>
-            <Image className={s.bgImg} src={imgOne} />
+            <Image priority={true} className={s.bgImg} src={imgOne} alt="Bgimage" />
         </div>
     )
 }

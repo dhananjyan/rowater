@@ -9,6 +9,9 @@ import s from "../styles/Home.module.css";
 export const getServerSideProps = async () => {
   return { props: { result: data } }
 }
+// const ProductsWeOffer = lazy(() => import('@/components/ProductsWeOffer/ProductsWeOffer'));
+
+
 
 export default function Home({result}) {
   

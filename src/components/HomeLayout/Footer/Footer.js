@@ -67,9 +67,11 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className={"container"}>
-                <div className={s.footerContent}>
-                    Copyrights &copy; 2023. All rights reserved.
+            <div>
+                <div className={"container"}>
+                    <div className={s.footerContent}>
+                        Copyrights &copy; 2023. All rights reserved.
+                    </div>
                 </div>
             </div>
         </footer>

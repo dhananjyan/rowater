@@ -12,6 +12,7 @@ import { useRouter } from "next/router";
 
 
 import data from "../../../assets/data.json";
+import Image from "next/image";
 
 export default function Header() {
     const pathname = usePathname();
@@ -46,7 +47,7 @@ export default function Header() {
         <header className={cx(s.header, { [s.headerScrolled]: (scrollPosition > 0) })}>
             <nav className={cx(s.headerNav, { [s.sideBarOpened]: isSideBarOpen })}>
                 <div className={s.logo}>
-                    <img src="/logo.png" />
+                    <Image width={100} height={60} alt='LOGO' src="/logo.png" />
                     <h1>Vinayaga<br />Engineering</h1>
                 </div>
                 {isMobile ? <div className={s.mobileIcon} onClick={() => setIsSideBarOpen(i => !i)} role="button">

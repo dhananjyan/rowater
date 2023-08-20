@@ -1,15 +1,11 @@
 "use client"
 import s from './style.module.scss';
-import cx from "classname";
 import 'swiper/css';
 import 'swiper/css/navigation';
-
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import Image from 'next/image';
-
-
 
 export default function ProductsWeOffer(props) {
     const { title, data = [] } = props;
@@ -43,6 +39,7 @@ export default function ProductsWeOffer(props) {
             >
                 {data?.map((item, i) => {
                     return (<SwiperSlide key={`ITEM_${title}_${i}`}>
+                    
                         <div className={s.productCard}>
                             <div className={s.image}>
                                 <Image src={item.imgSrc} alt={item?.name} fill />
