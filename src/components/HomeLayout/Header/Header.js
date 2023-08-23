@@ -75,7 +75,7 @@ export default function Header() {
                             </svg></span>}
                         <input type="checkbox" checked={toggle} className={s.hiddenToggle} />
                         {toggle && <ul>
-                            {data?.productWeOffer?.map((item, i) => <li key={`PRODUCT_LIST_${i}`}><Link onClick={handleMenuClick} href={`/product/${item?.slug}`}>{item?.name}</Link></li>)}
+                            {data?.product?.map((item, i) => <li key={`PRODUCT_LIST_${i}`}><Link onClick={handleMenuClick} href={`${item?.path}/${item?.slug}`}>{item?.name}</Link></li>)}
                             {/* <li><Link onClick={handleMenuClick} href="/product/ro-system">RO System</Link></li>
                             <li><Link onClick={handleMenuClick} href="/product/ro-cabinet">RO Cabinet</Link></li>
                             <li><Link onClick={handleMenuClick} href="/product/reverse-osmosis-system">Reverse Osmosis System</Link></li>

@@ -89,3 +89,7 @@ body {
   opacity: .9 !important;
   /* Firefox */
 }
+
+b, strong {
+  font-weight: 600 !important;
+}

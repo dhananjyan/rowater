@@ -6,9 +6,11 @@ import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 export default function ProductsWeOffer(props) {
-    const { title, data = [] } = props;
+    const { title, data = [], path } = props;
+    const router = useRouter();
     return (
         <div className='container' >
             <h3 className='mt-5 py-2'>{title}</h3>
@@ -39,8 +41,7 @@ export default function ProductsWeOffer(props) {
             >
                 {data?.map((item, i) => {
                     return (<SwiperSlide key={`ITEM_${title}_${i}`}>
-                    
-                        <div className={s.productCard}>
+                        <div className={s.productCard} onClick={() => item?.slug && router.push(`${path}/${item?.slug}`)} role={item?.slug ? "button" : "document"}>
                             <div className={s.image}>
                                 <Image src={item.imgSrc} alt={item?.name} fill />
                             </div>

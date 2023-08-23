@@ -1,21 +1,40 @@
 {
     "bannerTitle": "Your Go-to Place For All Domestic & Commercial Water Purification Systems in Madurai",
     "bannerDesc": "From domestic aqua guard RO purifier installation and service to commercial water plant installation - we do everything. We also provide spare parts for all domestic & commercial water purification appliances.",
-    "productWeOffer": [
+    "product": [
         {
             "slug": "aqua-guard-ro-purifier",
             "imgSrc": "/images/aqua-gruard-ro-purifier.webp",
             "name": "Aqua guard - RO Purifier",
-            "metaTitle": "Aqua guard - RO Purifier",
+            "metaTitle": "Best RO Water Purifiers in Madurai | Spares, Sales & Services",
             "metaDesc": "This is the description",
+            "path": "/product",
+            "description": "Welcome to Vinayaga Engineering – your trusted source for top-notch domestic and commercial RO water purifiers in Madurai, Tamil Nadu. In a city where water quality is crucial, we are here to provide you with the purest, safest, and most refreshing drinking water. Whether it's for your home or business, our RO water purifiers are designed to cater to Madurai's unique water conditions.",
             "section": [
                 {
                     "title": "Why we are the best Aqua guard - RO Purifier in Madurai?",
-                    "content": "<p>Hello How are&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>This is the sample text</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Hello</strong></p>"
+                    "content": "<p>Madurai's water sources can sometimes carry contaminants that are not visible to the naked eye. An RO water purifier employs a high-tech filtration process that effectively removes impurities, microorganisms, heavy metals, and even dissolved solids, leaving you with water that's not only visually clear but also exceptionally pure.</p><p>Have you ever noticed an off-putting odor or an unpleasant taste in the tap water? These issues can stem from various sources, but with an RO water purifier, they become a thing of the past. The multi-stage filtration process ensures that not only are harmful substances removed but also those that affect the taste and smell of your water.</p>"
                 },
                 {
-                    "title": "Why we are the best Aqua guard - RO Purifier in Madurai?",
-                    "content": "<p>Hello How are&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>This is the sample text</p>\n\n<p>&nbsp;</p>\n\n<p><strong>Hello</strong></p>"
+                    "title": "How the RO Water Purifier Works?",
+                    "content": "<p>Imagine a sieve so fine that only water molecules can pass through, leaving behind all the pollutants. That's the magic of our RO water purifiers. Using a semi-permeable membrane, they separate impurities from water molecules, resulting in crystal-clear, safe drinking water. It's like nature's filtration process, only enhanced and perfected by technology.</p>"
+                },
+                {
+                    "title": "Why Choose Us for Your Water Purifier Needs in Madurai?",
+                    "content": "<p>At Vinayaga Engineering, we take immense pride in being Madurai's best RO water purifier dealers. Our experience and commitment set us apart. With a wide range of domestic and commercial water purification systems, genuine water purifier spare parts, and expert services, we're not just selling products – we're offering reliability.</p>"
+                },
+                {
+                    "title": "Features of Our RO Water Purifiers",
+                    "content": "<p>Our RO water purifiers are more than just machines; they're lifesavers. With features like multi-stage filtration, UV purifiers, and quality dispensers, they redefine the way you consume water. Our products are developed to thrive in Madurai's water conditions, ensuring that every drop that reaches your glass is nothing short of purity.</p>"
+                },
+                {
+                    "title": "Products we offer",
+                    "content": "<ol><li style=\"font-weight: 400;\" aria-level=\"1\"><strong>Aqua Guard RO Water Purifier:</strong><span style=\"font-weight: 400;\"> Experience the gold standard in water purification with our Aqua Guard RO water purifier. Say goodbye to impurities and enjoy water that's as refreshing as nature intended.</span></li><li style=\"font-weight: 400;\" aria-level=\"1\"><strong>Water Dispenser:</strong><span style=\"font-weight: 400;\"> Quench your thirst effortlessly with our water dispensers. Whether you prefer it cold, hot, or at room temperature, pure water is just a press away.</span></li><li style=\"font-weight: 400;\" aria-level=\"1\"><strong>Water Softener:</strong><span style=\"font-weight: 400;\"> Enjoy the benefits of reduced mineral buildup and a smoother, more luxurious feel to your water.</span></li><li style=\"font-weight: 400;\" aria-level=\"1\"><strong>Iron Remover:</strong><span style=\"font-weight: 400;\"> Bid farewell to stubborn iron particles that affect water taste and quality. Our iron remover ensures every drop is free from unwanted impurities.</span></li><li style=\"font-weight: 400;\" aria-level=\"1\"><strong>Dolphin RO Water Purifier: </strong><span style=\"font-weight: 400;\">Experience the perfect fusion of efficiency and sophistication with our Dolphin RO water purifier. Discover a sleek design that complements the advanced purification technology.</span></li><li style=\"font-weight: 400;\" aria-level=\"1\"><strong>UV Water Purifiers:</strong><span> Harness the power of UV technology for an extra layer of protection. Our UV water purifiers ensure the highest level of purity by eliminating harmful microorganisms in your water.</span></li></ol>"
+                },
+                {
+                    "title": "Questions you might have",
+                    "content": "<h3><span style=\"font-weight: 400;\">1. What is the price of a dolphin ro water purifier in Madurai?</span></h3>\n<p>&nbsp;</p>\n<h3><span style=\"font-weight: 400;\">2. Which company is best for water purifiers?</span></h3>\n<p><span style=\"font-weight: 400;\">At Vinayaga Engineering, we offer the best water purifier systems in Madurai. We supply Aqua Guard &amp; Dolphin water purification systems and support both commercial and domestic water purification needs.&nbsp;</span></p>\n<h3><span style=\"font-weight: 400;\">3. Which is better UV or RO?</span></h3>\n<p><span style=\"font-weight: 400;\">Both UV and RO purification systems offer unique benefits. UV eliminates microorganisms, while RO removes impurities, providing comprehensive water purification solutions tailored to different needs.</span></p>\n<h3><span style=\"font-weight: 400;\">4. What is the price of an Aqua filter 15 Liter in Madurai?</span></h3>\n<p>&nbsp;</p>\n<h3><span style=\"font-weight: 400;\">5. What is the price of a 7 liter Aqua water filter in Madurai?</span></h3>"
+
                 }
             ]
         },
