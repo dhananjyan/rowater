@@ -75,7 +75,7 @@ export default function Header() {
                             </svg></span>}
                         <input type="checkbox" checked={toggle} className={s.hiddenToggle} />
                         {toggle && <ul>
-                            {data?.product?.map((item, i) => <li key={`PRODUCT_LIST_${i}`}><Link onClick={handleMenuClick} href={`${item?.path}/${item?.slug}`}>{item?.name}</Link></li>)}
+                            {data?.product?.map((item, i) => <li key={`PRODUCT_LIST_${i}`}><Link onClick={handleMenuClick} href={`/products/${item?.slug}`}>{item?.name}</Link></li>)}
                             {/* <li><Link onClick={handleMenuClick} href="/product/ro-system">RO System</Link></li>
                             <li><Link onClick={handleMenuClick} href="/product/ro-cabinet">RO Cabinet</Link></li>
                             <li><Link onClick={handleMenuClick} href="/product/reverse-osmosis-system">Reverse Osmosis System</Link></li>
@@ -93,9 +93,9 @@ export default function Header() {
                     <li><p role="button" onClick={() => handleMenuClick("about-us")} href="/#about-us" className={cx({
                         [s.actives]: pathname?.includes("aboutUs")
                     })}>About Us</p></li>
-                    <li><p role="button" onClick={() => handleMenuClick("products")} href="#products" className={cx({
+                    {/* <li><p role="button" onClick={() => handleMenuClick("products")} href="#products" className={cx({
                         [s.actives]: pathname?.includes("products")
-                    })}>Products</p></li>
+                    })}>Products</p></li> */}
                     {/* <li><p role="button" onClick={() => handleMenuClick("wholesale")} href="#wholesale" className={cx({
                         [s.actives]: pathname?.includes("wholesale")
                     })}>Wholesale</p></li> */}

@@ -11,7 +11,8 @@
     flex-grow: 1;
 }
 
-.phone, .whatsappIcon {
+.mobileIcon,
+.whatsappIcon {
     position: fixed;
     right: 0;
     z-index: 100;
@@ -34,20 +35,19 @@
 }
 
 .whatsappIcon {
-top: 410px;
-background-color: #25d366;
-border-color: #25d366;
-margin: 2px;
-color: white;
-border-radius: 50px;
+    top: 410px;
+    background-color: #25d366;
+    border-color: #25d366;
+    margin: 2px;
+    color: white;
+    border-radius: 50px;
 }
 
-.phone a {
-    text-align: center;
-    text-decoration: none;
-    color: inherit;
-}
-
-.phone span {
-    display: block;
+.mobileIcon {
+    top: 470px;
+    background-color: white;
+    border: 1px solid rgb(202, 202, 202);
+    margin: 2px;
+    color: #4498FF;
+    border-radius: 50px;
 }

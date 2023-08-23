@@ -31,7 +31,7 @@ export default function Home({result}) {
           <About />
         </section>
         <section id="products">
-          <ProductsWeOffer title="Products we offer" data={result?.product} path="/product"/>
+          <ProductsWeOffer title="Products we offer" data={result?.product} path="/products"/>
         </section>
         <section id="wholesale">
           <ProductsWeOffer title="Wholesale dealers of" data={result?.wholeSaleDealerOf} />
