@@ -90,6 +90,17 @@ body {
   /* Firefox */
 }
 
-b, strong {
+b,
+strong {
   font-weight: 600 !important;
+}
+
+h3 {
+  font-size: 1rem !important;
+  font-weight: bolder !important;
+}
+
+h2 {
+  font-weight: 500 !important;
+  font-size: 1.4rem !important;
 }
