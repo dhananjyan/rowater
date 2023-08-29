@@ -5,6 +5,7 @@ import mongoose, { Schema } from 'mongoose';
 const CategorySchema = new mongoose.Schema({
     name: String,
     slug: String,
+    isEnabled: Boolean,
     meta: {
         title: String,
         description: String
@@ -13,13 +14,14 @@ const CategorySchema = new mongoose.Schema({
         type: Number,
         default: 1
     },
+    content: String,
     cms: {
         type: Schema.Types.ObjectId,
         ref: "cms"
     },
     parentId: {
         type: Schema.Types.ObjectId,
-        ref: "category"
+        ref: "categories"
     }
 });
 

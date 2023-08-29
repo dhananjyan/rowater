@@ -1,0 +1,41 @@
+.addCategoryForm {
+
+    .inputParent {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        // padding: 20px 0;
+        gap: 10px;
+
+        .inputContainer {
+            padding-top: 15px;
+        }
+    }
+
+    .submitBtn {
+        margin-top: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .addCategoryForm {
+
+        .inputParent {
+            grid-template-columns: auto auto;
+
+            .inputContainer {}
+        }
+    }
+}
+
+
+@media only screen and (max-width: 712px) {
+    .addCategoryForm {
+
+        .inputParent {
+            grid-template-columns: auto;
+
+            .inputContainer {}
+        }
+    }
+}

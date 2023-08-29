@@ -12,6 +12,7 @@ const ProductSchema = new mongoose.Schema({
         type: Schema.Types.ObjectId,
         ref: "cms"
     },
+    isEnabled: Boolean,
 });
 
 export default mongoose.models.Product || mongoose.model('Product', ProductSchema)

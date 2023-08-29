@@ -6,16 +6,17 @@ const CmsSchema = new mongoose.Schema({
         {
             title: String,
             content: String,
-            faq: [{
-                question: String,
-                answer: String
+            isEnabled: Boolean,
+            list: [{
+                title: String,
+                description: String,
+                image: String
             }],
             image: String,
             type: {
                 type: String,
                 enum: ["content", "faq", "image"]
-            },
-            isEnabled: Boolean
+            }
         }
     ]
 });
