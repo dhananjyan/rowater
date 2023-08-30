@@ -15,7 +15,7 @@ export default function SingleProduct({ result }) {
     return (
         <div className={s.parent}>
             <Head>
-                <title>{`${result.metaTitle} | Vinayaga Engineering`}</title>
+                <title>{`${result.metaTitle}`}</title>
                 <meta
                     name="description"
                     content="We offer everything you need to get pure water from domestic RO water purifier, dispenser, CRI pumps, to industrial & commercial water plants & spare parts."
