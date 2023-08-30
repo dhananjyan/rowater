@@ -6,12 +6,20 @@ export default function Footer() {
     const router = useRouter();
 
     const handleMenuClick = (id) => {
-        const container = document.getElementById(id);
-        if (container) {
-            const yOffset = -100; // Replace with your desired offset
-            const y = container.getBoundingClientRect().top + window.pageYOffset + yOffset;
-            window.scrollTo({ top: y, behavior: 'smooth' });
+        const scrollTo = () => {
+            const container = document.getElementById(id);
+            if (container) {
+                const yOffset = -100; // Replace with your desired offset
+                const y = container.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+            }
         }
+        if (router.pathname !== "/")
+            router.push("/").then(() => {
+                scrollTo()
+            })
+        else
+            scrollTo()
     }
     return (
         <footer className={cx(s.footer)}>
