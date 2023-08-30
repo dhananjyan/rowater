@@ -72,7 +72,7 @@ export default function Cms() {
                                         register={register}
                                         inputGroupClassname={cx("py-2")}
                                     />
-                                    {["content", "card"].includes(values.cms?.[index]?.type) && <Quill
+                                    {["content"].includes(values.cms?.[index]?.type) && <Quill
                                         label="Content"
                                         name={`cms.${index}.content`}
                                         register={register}
@@ -96,6 +96,18 @@ export default function Cms() {
                                         setValue={setValue}
                                         titleLable="Question"
                                         descriptionLabel="Answer"
+                                        showImage
+                                    />}
+                                    {/* Card */}
+                                    {["card"].includes(values.cms?.[index]?.type) && <List
+                                        control={control}
+                                        register={register}
+                                        label="Card"
+                                        inputGroupClassname={cx("py-2")}
+                                        name={`cms.${index}.list`}
+                                        setValue={setValue}
+                                        titleLable="Title"
+                                        descriptionLabel="Description"
                                         showImage
                                     />}
                                 </div>
