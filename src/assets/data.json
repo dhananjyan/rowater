@@ -38,46 +38,64 @@
             ]
         },
         {
+            "slug": "aqua-guard-ro-purifier",
+            "redirect": "ro-water-purifier-madurai"
+        },
+        {
             "slug": "water-softner",
             "imgSrc": "/images/water-softner.jpg",
             "name": "Water softener",
-            "title": "Water softener"
+            "title": "Water softener",
+            "metaTitle": "Water softener",
+            "metaDesc": "Water softener"
         },
         {
             "slug": "iron-remover",
             "imgSrc": "/images/iron-remover.webp",
             "name": "Iron remover",
-            "title": "Iron remover"
+            "title": "Iron remover",
+            "metaTitle": "Iron remover",
+            "metaDesc": "Iron remover"
         },
         {
             "slug": "water-dispenser",
             "imgSrc": "/images/water-dispenser.jpg",
             "name": "Water dispenser",
-            "title": "Water dispenser"
+            "title": "Water dispenser",
+            "metaTitle": "Water dispenser",
+            "metaDesc": "Water dispenser"
         },
         {
             "slug": "dolphin-aqua-care-ro-purifier",
             "imgSrc": "/images/dolphin-water-purifier.webp",
             "name": "Dolphin aqua care - RO Purifier",
-            "title": "Dolphin aqua care - RO Purifier"
+            "title": "Dolphin aqua care - RO Purifier",
+            "metaTitle": "Dolphin aqua care - RO Purifier",
+            "metaDesc": "Dolphin aqua care - RO Purifier"
         },
         {
             "slug": "domestic-water-purifier",
             "imgSrc": "/images/aqua-gruard-ro-purifier.webp",
             "name": "Domestic water purifier",
-            "title": "Domestic water purifier"
+            "title": "Domestic water purifier",
+            "metaTitle": "Domestic water purifier",
+            "metaDesc": "Domestic water purifier"
         },
         {
             "slug": "commercial-water-purifier",
             "imgSrc": "/images/comercial-water-purifier.jpg",
             "name": "Commercial water purifier",
-            "title": "Commercial water purifier"
+            "title": "Commercial water purifier",
+            "metaTitle": "Commercial water purifier",
+            "metaDesc": "Commercial water purifier"
         },
         {
             "slug": "uv-purifier",
             "imgSrc": "/images/uv-purifier.jpg",
             "name": "UV purifier",
-            "title": "UV purifier"
+            "title": "UV purifier",
+            "metaTitle": "UV purifier",
+            "metaDesc": "UV purifier"
         }
     ],
     "wholeSaleDealerOf": [
