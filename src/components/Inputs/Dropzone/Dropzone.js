@@ -7,8 +7,15 @@ import { Form } from 'react-bootstrap';
 export default function Dropzone(props) {
     const { label, inputGroupClassname, setValue, name } = props;
 
-    const onDropAccepted = file => {
-        setValue(name, file)
+    const onDropAccepted = files => {
+        var file = files[0]
+        const reader = new FileReader();
+        reader.onload = (event) => {
+            console.log(event.target.result);
+            setValue(name, event.target.result)
+        };
+        reader.readAsDataURL(file);
+
     }
 
     const {
