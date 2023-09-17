@@ -50,9 +50,9 @@ export default function SingleProduct({ result }) {
               <section>
                 <div className='container'>
                   <div className='d-flex flex-wrap gap-2 justify-content-around align-items-center '>
-                    {data?.map(item => {
+                    {data?.map((item, i) => {
                       const { title, img } = item || {}
-                      return (<div className={s.featureItem}>
+                      return (<div key={`POINTS_${title}_I`} className={s.featureItem}>
                         <div className={s.featureImageContainer}>
                           {/* <Image src={img} fill alt="image" /> */}
                           <div dangerouslySetInnerHTML={{ __html: img }} />
@@ -71,9 +71,9 @@ export default function SingleProduct({ result }) {
                 <div className='container'>
                   <center><h2 className='my-5'>{title}</h2></center>
                   <div className={cx(' ', s.categoryParent)}>
-                    {data?.map(item => {
+                    {data?.map((item, i) => {
                       const { title, img } = item || {};
-                      return (<div className={s.categoryItem}>
+                      return (<div key={`CATEGORY_${title}_${i}`} className={s.categoryItem}>
                         <div className={s.categoryImageContainer}>
                           <Image src={img} fill alt="image" />
                         </div>
@@ -108,9 +108,9 @@ export default function SingleProduct({ result }) {
                   <center><h2 className='my-5' style={{ maxWidth: 600 }}>{title}</h2></center>
                   <div className={s.categoryParent}>
 
-                    {data?.map(item => {
+                    {data?.map((item, i) => {
                       const { title, content } = item || {};
-                      return (<div className={s.featureItem}>
+                      return (<div key={`FEATURE_${title}_${i}`} className={s.featureItem}>
                         <h4>{title}</h4>
                         <p>{content}</p>
                       </div>);
@@ -126,9 +126,9 @@ export default function SingleProduct({ result }) {
                   <center><h2 className='my-5'>{title}</h2></center>
                   <div className='d-flex flex-wrap gap-2 justify-content-around align-items-baseline '>
 
-                    {data?.map(item => {
+                    {data?.map((item, i) => {
                       const { title, content, img } = item || {};
-                      return (<div className={s.featureItem}>
+                      return (<div  key={`REVIEW_${title}_${i}`} className={s.featureItem}>
                         <div className={s.featureImageContainer}>
                           <Image src={img} fill alt="image" />
                         </div>
