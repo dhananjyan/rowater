@@ -11,7 +11,7 @@ import useScrollPosition from "@/hooks/useScrollPosition";
 import { useRouter } from "next/router";
 
 
-import data from "../../../assets/data.json";
+import data from "../../../../../assets/data.json";
 import Image from "next/image";
 
 export default function Header() {
@@ -90,6 +90,9 @@ export default function Header() {
                             <li><Link onClick={handleMenuClick} href="/product/">UF Membrane</Link></li> */}
                         </ul>}
                     </li>
+                    <li><Link role="button" onClick={() => handleMenuClick()} href="/industrial-ro-plant" className={cx({
+                        [s.actives]: pathname?.includes("industrial-ro-plant")
+                    })}>Industrial RO Plant</Link></li>
                     <li><p role="button" onClick={() => handleMenuClick("about-us")} href="/#about-us" className={cx({
                         [s.actives]: pathname?.includes("aboutUs")
                     })}>About Us</p></li>

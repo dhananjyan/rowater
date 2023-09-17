@@ -1,0 +1,174 @@
+@import "../../assets/scss/common.scss";
+
+
+
+// @media only screen and (max-width: 1050px) {
+
+//     .categoryParent {
+//         grid-template-columns: 1fr 1fr !important;
+//     }
+// }
+@media only screen and (max-width: 1050px) {
+
+    .categoryParent {
+        grid-template-columns: 1fr 1fr !important;
+    }
+}
+
+
+@media only screen and (max-width: 792px) {
+
+    .categoryParent {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+
+@media only screen and (max-width: 520px) {
+    .contactUs {
+        flex-wrap: wrap;
+    }
+}
+
+.main {
+    section {
+        // min-height: 50vh;
+        margin: 50px 0;
+        display: flex;
+        align-items: center;
+
+        h2 {
+            font-weight: 700 !important;
+            font-size: 1.6rem !important;
+        }
+
+        .featureItem {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+            gap: 10px;
+            max-width: 300px;
+
+            .featureImageContainer {
+                position: relative;
+                width: 80px;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+                border: 1px solid rgb(199, 199, 199);
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+
+                img {
+                    border-radius: 50%;
+                }
+
+            }
+
+            p {
+                text-align: center;
+            }
+        }
+
+        .categoryParent {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: flex-start;
+            place-items: center;
+
+            .categoryItem {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 15px;
+                margin-top: 15px;
+
+
+
+                .categoryImageContainer {
+                    position: relative;
+                    width: 300px;
+                    aspect-ratio: 1/1;
+                    border-radius: 4px;
+                    // border: 1px solid rgb(228, 228, 228);
+                    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+                    img {
+                        border-radius: 50%;
+                    }
+
+                }
+
+                h5 {
+                    text-align: center;
+                }
+            }
+        }
+
+        .contactUs {
+            display: flex;
+            align-items: center;
+            // flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            background-color: $blue-color;
+            padding: 40px 60px;
+            border-radius: 25px;
+            color: white;
+            max-width: 700px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+
+            button {
+                text-wrap: nowrap;
+            }
+        }
+
+    }
+
+
+    .featureSection {
+        .categoryParent {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+            gap: 40px;
+
+            .featureItem {
+                display: grid;
+                height: 100%;
+                border: 1px solid #4498FF;
+                padding: 20px 15px;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1fr;
+                max-width: 300px;
+                border-radius: 50px;
+                box-shadow: #4498FF 0px 1px 1px, #4498FF 0px 0px 1px 1px;
+
+                p {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+.accordianHeader {
+    button {
+
+        background-color: $blue-color !important;
+        color: white !important;
+        font-weight: bold;
+    }
+
+}
+
+.accordianBody {
+    border: 2px solid $blue-color;
+    border-top: none;
+}

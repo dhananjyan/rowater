@@ -1,0 +1,23 @@
+.content {
+    width: 80%;
+
+    h1 {
+        font-weight: 700;
+    }
+}
+
+.imageContainer {
+    position: relative;
+    aspect-ratio: 1/1;
+
+    img {
+        object-fit: contain;
+    }
+}
+
+.image {
+    // position: relative !important;
+    // max-width: 80%;
+    // aspect-ratio: 1/1;
+    // width: 100%;
+}

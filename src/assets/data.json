@@ -38,6 +38,181 @@
             ]
         },
         {
+            "metaTitle": "Industrial RO & Water Treatment Plant Dealer Madurai",
+            "metaDesc": "Shop industrial RO water treatment plant at affordable cost and get pure water for industrial use. We offer upto 2000 LPH water system and take custom orders.",
+            "slug": "industrial-ro-plant-madurai",
+            "imgSrc": "/images/250-lph-ro-plant.jpg",
+            "heading": "Get clean & pure water with our Industrial RO Plant!",
+            "description": "Join leading industries trusting our RO water treatment expertise. With advanced pre-treatment methods, we ensure you get clean and safe water for all your industrial needs.",
+            "section": [
+                {
+                    "type": "contentImage",
+                    "title": "What is Industrial RO Plant?",
+                    "content": "An Industrial Reverse Osmosis (RO) Plant is a water treatment system designed for industrial uses to purify water. It uses RO, a filtration technique that forces water through a semi-permeable membrane to eliminate unwanted substances.",
+                    "img": "/images/250-lph-ro-plant.jpg"
+                },
+                {
+                    "type": "points",
+                    "data": [
+                        {
+                            "title": "Easy to install",
+                            "img": "<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='currentColor' class='bi bi-gear-fill' viewBox='0 0 16 16'> <path d='M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.820.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z'/> </svg>"
+                        },
+                        {
+                            "title": "Fully Automatic",
+                            "img": "/images/250lph.webp"
+                        },
+                        {
+                            "title": "Cost-efficient",
+                            "img": "/images/250lph.webp"
+                        }
+                    ]
+                },
+                {
+                    "type": "category",
+                    "title": "Our Industrial RO Plant Solutions",
+                    "data": [
+                        {
+                            "title": "50 LPH RO Plant",
+                            "img": "/images/250lph.webp"
+                        },
+                        {
+                            "title": "100 LPH RO Plant",
+                            "img": "/images/250lph.webp"
+                        },
+                        {
+                            "title": "150 LPH RO Plant",
+                            "img": "/images/250lph.webp"
+                        },
+                        {
+                            "title": "200 LPH RO Plant",
+                            "img": "/images/250lph.webp"
+                        },
+                        {
+                            "title": "250 LPH RO Plant",
+                            "img": "/images/250lph.webp"
+                        },
+                        {
+                            "title": "500 LPH RO Plant",
+                            "img": "/images/250lph.webp"
+                        },
+                        {
+                            "title": "1000 LPH RO Plant",
+                            "img": "/images/250lph.webp"
+                        },
+                        {
+                            "title": "2000 LPH RO Plant",
+                            "img": "/images/250lph.webp"
+                        },
+                        {
+                            "title": "Custom Solution",
+                            "img": "/images/250lph.webp"
+                        }
+                    ]
+                },
+                {
+                    "type": "banner",
+                    "content": "Schedule an industrial visit to get an exact project quote from our expert."
+                },
+                {
+                    "type": "feature",
+                    "title": "Industrial RO Water Purifier Features",
+                    "data": [
+                        {
+                            "title": "Clean & Pure Water",
+                            "content": "RO membranes have microscopic pores that allow water molecules to pass through while blocking dissolved salts, minerals, and other impurities. The membranes reduce Total Dissolved Solids (TDS) and produce purified water."
+                        },
+                        {
+                            "title": "Power Efficient",
+                            "content": "Industrial RO water purifiers use modern and energy-efficient filtration technologies like, high quality pressure vessels, pumps, filters, & membranes that improves system efficiency, thus saving power consumption."
+                        },
+                        {
+                            "title": "Handles High Capacity",
+                            "content": "Industrial water plants are designed to handle large volumes of water, often ranging from 500 liters per hour (LPH) or more. Our RO plants starts from 50 LPH to all the way above 2000 LPH. And it can be customized to your needs."
+                        },
+                        {
+                            "title": "Pre-treatment Systems",
+                            "content": "Our industrial RO water purifiers include pre-treatment systems like sand filters and activated carbon filters that ensures RO membranes operates effectively and will prolong its lifespan."
+                        },
+                        {
+                            "title": "High Pressure Vessels",
+                            "content": "RO membranes are placed inside pressure vessels designed to withstand the high pressures required for the reverse osmosis process. These vessels protect the membranes and maintain adequate pressure."
+                        },
+                        {
+                            "title": "Automatic handling",
+                            "content": "RO plants can be operated manually and automatically depending on customers' requirements and environment. A control panel is used to monitor and control the operation, including flow rates, pressure, etc."
+                        }
+                    ]
+                },
+                {
+                    "type": "banner",
+                    "content": "Our Industrial RO plants & purifiers can be customized to meet your specific water quality and quantity needs."
+                },
+                {
+                    "type": "review",
+                    "title": "What our customers say about us",
+                    "data": [
+                        {
+                            "title": "Vignesh",
+                            "img": "/images/250lph.webp",
+                            "content": "Good service and quick response for the customer queries"
+                        },
+                        {
+                            "title": "Ravichandran",
+                            "img": "/images/250lph.webp",
+                            "content": "Best customer service on before and after.. suberb quality best price.. In this place easily identify in city.."
+                        },
+                        {
+                            "title": "Duvaragan",
+                            "img": "/images/250lph.webp",
+                            "content": "Execellent Job done by Vinayaga team for Installation. Our water problem solved fully. Thanks Ganesh."
+                        }
+                    ]
+                },
+                {
+                    "type": "faq",
+                    "title": "Questions you might have about industrial RO water purifier",
+                    "data": [
+                        {
+                            "title": "How much does an industrial RO water system cost?",
+                            "content": "Industrial RO water plants' cost varies based on system design, operating conditions, the quality of components used, and specific water quality and quantity requirements of your industry. To give you an rough estimate, the 250 LPH RO plant costs around 1 Lakh INR without taxes."
+                        },
+                        {
+                            "title": "Is industrial RO water safe to drink?",
+                            "content": "Yes, industrial RO water is safe to drink if the RO system is operated and maintained properly."
+                        },
+                        {
+                            "title": "What is the cost of 1000 LPH RO plant?",
+                            "content": "The 1000 LPH industrial RO plant costs around {Add the amount} INR without taxes."
+                        },
+                        {
+                            "title": "What are the components used in commercial RO plant?",
+                            "content": "The RO plant comprises several essential components like sand filters, RO membranes, high-pressure pump, pressure vessels, control panel, pressure gauges, flow meters, etc."
+                        },
+                        {
+                            "title": "Who is the best industrial/commercial RO plant dealer in India?",
+                            "content": "At Vinayaga Engineering, we offer customized and branded industrial RO water plants at affordable prices to ensure safe drinking water for everyone. We serve locations such as, Madurai, Dindigul, Sivagangai, Virudhunagar, Theni, Ramanathapuram, and Tirunelveli."
+                        },
+                        {
+                            "title": "What are the benefits of using industrial RO plant?",
+                            "list": [
+                                "Pure & safe water for your industrial needs.",
+                                "Enhances company's reputation.",
+                                "RO systems can be scaled to meet your water needs.",
+                                "Environment friendly as RO plants don't use chemical treatment methods.",
+                                "Meeting industrial water quality regulations and standards is easier.",
+                                "Energy and cost-efficient to maintain."
+                            ]
+                        },
+                        {
+                            "title": "How industrial water purification plant work?",
+                            "content": "An industrial RO plant works by using a high-pressure pump to push water through RO membranes, which selectively allow water molecules to pass while blocking impurities and contaminants. This process separates purified water from impurities, resulting in purified water suitable for industrial use."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "slug": "aqua-guard-ro-purifier",
             "redirect": "ro-water-purifier-madurai"
         },

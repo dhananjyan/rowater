@@ -1,4 +1,4 @@
-import HomeLayout from "@/components/HomeLayout";
+import HomeLayout from "@/components/Common/Layout/HomeLayout";
 import MainBanner from "@/components/MainBanner/MainBanner";
 import data from "../../assets/data.json";
 import Head from "next/head";
