@@ -130,7 +130,8 @@ export default function SingleProduct({ result }) {
                       const { title, content, img } = item || {};
                       return (<div  key={`REVIEW_${title}_${i}`} className={s.featureItem}>
                         <div className={s.featureImageContainer}>
-                          <Image src={img} fill alt="image" />
+                          {/* <Image src={img} fill alt="image" /> */}
+                          <div dangerouslySetInnerHTML={{ __html: img }} />
                         </div>
                         <div><b>{title}</b></div>
                         <p>{content}</p>

@@ -60,11 +60,11 @@
                         },
                         {
                             "title": "Fully Automatic",
-                            "img": "/images/250lph.webp"
+                            "img": "<svg xmlns='http://www.w3.org/2000/svg' width='40' height='38' viewBox='0 0 25 24' fill='none'><path d='M19.2375 8.30172L15.3875 12.143H18.275C18.275 15.3216 15.6859 17.9049 12.5 17.9049C11.5279 17.9049 10.6039 17.6648 9.80498 17.2327L8.39973 18.6347C9.5836 19.3838 10.9889 19.8255 12.5 19.8255C16.7542 19.8255 20.2 16.3876 20.2 12.143H23.0875L19.2375 8.30172ZM6.72498 12.143C6.72498 8.96434 9.3141 6.38108 12.5 6.38108C13.4721 6.38108 14.3961 6.62116 15.195 7.05331L16.6002 5.65124C15.4164 4.9022 14.0111 4.46045 12.5 4.46045C8.24573 4.46045 4.79998 7.89839 4.79998 12.143H1.91248L5.76248 15.9843L9.61248 12.143H6.72498Z' fill='black'/></svg>"
                         },
                         {
                             "title": "Cost-efficient",
-                            "img": "/images/250lph.webp"
+                            "img": "<svg focusable='false' width='40' height='40' fill='currentColor' aria-hidden='true' viewBox='0 0 24 24' data-testid='KeyboardDoubleArrowDownIcon'><path d='M18 6.41 16.59 5 12 9.58 7.41 5 6 6.41l6 6z'></path><path d='m18 13-1.41-1.41L12 16.17l-4.59-4.58L6 13l6 6z'></path></svg>"
                         }
                     ]
                 },
@@ -154,17 +154,17 @@
                     "data": [
                         {
                             "title": "Vignesh",
-                            "img": "/images/250lph.webp",
+                            "img": "<svg focusable='false' width='40' height='40' fill='currentColor' aria-hidden='true' viewBox='0 0 24 24' data-testid='AccountCircleIcon'><path d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm0 14c-2.03 0-4.43-.82-6.14-2.88C7.55 15.8 9.68 15 12 15s4.45.8 6.14 2.12C16.43 19.18 14.03 20 12 20z'></path></svg>",
                             "content": "Good service and quick response for the customer queries"
                         },
                         {
                             "title": "Ravichandran",
-                            "img": "/images/250lph.webp",
+                            "img": "<svg focusable='false' width='40' height='40' fill='currentColor' aria-hidden='true' viewBox='0 0 24 24' data-testid='AccountCircleIcon'><path d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm0 14c-2.03 0-4.43-.82-6.14-2.88C7.55 15.8 9.68 15 12 15s4.45.8 6.14 2.12C16.43 19.18 14.03 20 12 20z'></path></svg>",
                             "content": "Best customer service on before and after.. suberb quality best price.. In this place easily identify in city.."
                         },
                         {
                             "title": "Duvaragan",
-                            "img": "/images/250lph.webp",
+                            "img": "<svg focusable='false' width='40' height='40' fill='currentColor' aria-hidden='true' viewBox='0 0 24 24' data-testid='AccountCircleIcon'><path d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm0 14c-2.03 0-4.43-.82-6.14-2.88C7.55 15.8 9.68 15 12 15s4.45.8 6.14 2.12C16.43 19.18 14.03 20 12 20z'></path></svg>",
                             "content": "Execellent Job done by Vinayaga team for Installation. Our water problem solved fully. Thanks Ganesh."
                         }
                     ]
