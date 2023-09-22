@@ -5,8 +5,8 @@ import cx from "classname";
 import CommonButton from '../Common/Button/Button';
 import { Accordion } from 'react-bootstrap';
 import { lazy, useRef } from 'react';
-// import ContactForm from '@/components/ContactForm/ContactForm';
-const ContactForm = lazy(() => import('@/components/ContactForm/ContactForm'));
+import ContactForm from '@/components/ContactForm/ContactForm';
+// const ContactForm = lazy(() => import('@/components/ContactForm/ContactForm'));
 
 export default function SingleProduct({ result }) {
 
