@@ -10,7 +10,6 @@ export default function App({ Component, pageProps }) {
 
   return <>
     <Head>
-      <link rel="canonical" href="https://www.vinayagawaterpurifiers.com/" />
       <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css"

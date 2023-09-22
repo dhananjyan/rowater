@@ -13,11 +13,12 @@ export const getServerSideProps = async () => {
 
 
 
-export default function Home({result}) {
-  
+export default function Home({ result }) {
+
   return (
     <div className={s.parent}>
       <Head>
+        <link rel="canonical" href="https://www.vinayagawaterpurifiers.com/" />
         <title>Domestic & Commercial RO Water Purifier Dealer in Madurai | Vinayaga Engineering</title>
         <meta
           name="description"
@@ -31,7 +32,7 @@ export default function Home({result}) {
           <About />
         </section>
         <section id="products">
-          <ProductsWeOffer title="Products we offer" data={result?.product} path="/products"/>
+          <ProductsWeOffer title="Products we offer" data={result?.product} path="/products" />
         </section>
         <section id="wholesale">
           <ProductsWeOffer title="Wholesale dealers of" data={result?.wholeSaleDealerOf} />

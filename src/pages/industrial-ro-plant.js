@@ -30,6 +30,7 @@ export default function layout({ result }) {
                     content={result?.metaDesc}
                     key="desc"
                 />
+                <link rel="canonical" href="https://www.vinayagawaterpurifiers.com/industrial-ro-plant" />
             </Head>
             <ProductLayout>
                 <SingleProduct result={result} />

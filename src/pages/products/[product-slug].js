@@ -24,6 +24,7 @@ export default function SingleProduct({ result }) {
         <div className={s.parent}>
             <Head>
                 <title>{`${result.metaTitle}`}</title>
+                <link rel="canonical" href={`https://www.vinayagawaterpurifiers.com/products/${result?.slug}`} />
                 <meta
                     name="description"
                     content="We offer everything you need to get pure water from domestic RO water purifier, dispenser, CRI pumps, to industrial & commercial water plants & spare parts."
