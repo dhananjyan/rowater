@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/image';
 import s from "./SingleProduct.module.scss";
 import ContentImage from './ContentImage/ContentImage';
 import cx from "classname";
@@ -31,144 +31,144 @@ export default function SingleProduct({ result }) {
       {section?.map((item, i) => {
         const { type, title, content, img, data } = item || {};
 
-        switch (type) {
-          case "contentImage":
-            return (
-              <section key={`NEW_SECTION_${i}`} >
-                <ContentImage
-                  titleTwo={title}
-                  description={content}
-                  image={img}
-                  isLeft
-                  onClick={scrollToContact}
-                />
-              </section>)
-            break;
+        // switch (type) {
+        if (type === "contentImage")
+          return (
+            <section key={`NEW_SECTION_${i}`} >
+              <ContentImage
+                titleTwo={title}
+                description={content}
+                image={img}
+                isLeft
+                onClick={scrollToContact}
+              />
+            </section>)
 
-          case "points":
-            return (
-              <section key={`NEW_SECTION_${i}`}>
-                <div className='container'>
-                  <div className='d-flex flex-wrap gap-2 justify-content-around align-items-center '>
-                    {data?.map((item, i) => {
-                      const { title, img } = item || {}
-                      return (<div key={`POINTS_${title}_I`} className={s.featureItem}>
-                        <div className={s.featureImageContainer}>
-                          {/* <Image src={img} fill alt="image" /> */}
-                          <div dangerouslySetInnerHTML={{ __html: img }} />
-                        </div>
-                        <h5>{title}</h5>
-                      </div>)
-                    })}
-                  </div>
-                </div>
-              </section>)
-            break;
-          case "category":
-            return (
 
-              <section key={`NEW_SECTION_${i}`}>
-                <div className='container'>
-                  <center><h2 className='my-5'>{title}</h2></center>
-                  <div className={cx(' ', s.categoryParent)}>
-                    {data?.map((item, i) => {
-                      const { title, img } = item || {};
-                      return (<div key={`CATEGORY_${title}_${i}`} className={s.categoryItem}>
-                        <div className={s.categoryImageContainer}>
-                          <Image src={img} fill alt="image" />
-                        </div>
-                        <h5>{title}</h5>
-                      </div>);
-                    })}
-                  </div>
-                </div>
-              </section>
-            );
-            break;
-          case "banner":
-            return (
-              <section key={`NEW_SECTION_${i}`} >
-                <div className='container mt-5'>
-                  <div className='d-flex justify-content-center align-items-center'>
-                    <div className={s.contactUs}>
-                      <div>{content}</div>
-                      <div>
-                        <CommonButton onClick={scrollToContact} style={{ padding: "8px 30px" }} variant="white" >Contact us</CommonButton>
+        if (type === "points")
+          return (
+            <section key={`NEW_SECTION_${i}`}>
+              <div className='container'>
+                <div className='d-flex flex-wrap gap-2 justify-content-around align-items-center '>
+                  {data?.map((item, i) => {
+                    const { title, img } = item || {}
+                    return (<div key={`POINTS_${title}_I`} className={s.featureItem}>
+                      <div className={s.featureImageContainer}>
+                        {/* <Image src={img} fill alt="image" /> */}
+                        <div dangerouslySetInnerHTML={{ __html: img }} />
                       </div>
+                      <h5>{title}</h5>
+                    </div>)
+                  })}
+                </div>
+              </div>
+            </section>)
+
+        if (type === "category")
+          return (
+
+            <section key={`NEW_SECTION_${i}`}>
+              <div className='container'>
+                <center><h2 className='my-5'>{title}</h2></center>
+                <div className={cx(' ', s.categoryParent)}>
+                  {data?.map((item, i) => {
+                    const { title, img } = item || {};
+                    return (<div key={`CATEGORY_${title}_${i}`} className={s.categoryItem}>
+                      <div className={s.categoryImageContainer}>
+                        <Image src={img} fill alt="image" />
+                      </div>
+                      <h5>{title}</h5>
+                    </div>);
+                  })}
+                </div>
+              </div>
+            </section>
+          );
+
+        if (type === "banner")
+          return (
+            <section key={`NEW_SECTION_${i}`} >
+              <div className='container mt-5'>
+                <div className='d-flex justify-content-center align-items-center'>
+                  <div className={s.contactUs}>
+                    <div>{content}</div>
+                    <div>
+                      <CommonButton onClick={scrollToContact} style={{ padding: "8px 30px" }} variant="white" >Contact us</CommonButton>
                     </div>
                   </div>
                 </div>
-              </section>
-            );
-            break;
-          case "feature":
-            return (
-              <section key={`NEW_SECTION_${i}`} className={s.featureSection}>
-                <div className='container'>
-                  <center><h2 className='my-5' style={{ maxWidth: 600 }}>{title}</h2></center>
-                  <div className={s.categoryParent}>
+              </div>
+            </section>
+          );
 
-                    {data?.map((item, i) => {
-                      const { title, content } = item || {};
-                      return (<div key={`FEATURE_${title}_${i}`} className={s.featureItem}>
-                        <h4>{title}</h4>
-                        <p>{content}</p>
-                      </div>);
-                    })}
-                  </div>
-                </div>
-              </section>);
-            break;
-          case "review":
-            return (
-              <section key={`NEW_SECTION_${i}`}>
-                <div className='container'>
-                  <center><h2 className='my-5'>{title}</h2></center>
-                  <div className='d-flex flex-wrap gap-2 justify-content-around align-items-baseline '>
+        if (type === "feature")
+          return (
+            <section key={`NEW_SECTION_${i}`} className={s.featureSection}>
+              <div className='container'>
+                <center><h2 className='my-5' style={{ maxWidth: 600 }}>{title}</h2></center>
+                <div className={s.categoryParent}>
 
-                    {data?.map((item, i) => {
-                      const { title, content, img } = item || {};
-                      return (<div key={`REVIEW_${title}_${i}`} className={s.featureItem}>
-                        <div className={s.featureImageContainer}>
-                          {/* <Image src={img} fill alt="image" /> */}
-                          <div dangerouslySetInnerHTML={{ __html: img }} />
-                        </div>
-                        <div><b>{title}</b></div>
-                        <p>{content}</p>
-                      </div>);
-                    })}
-                  </div>
+                  {data?.map((item, i) => {
+                    const { title, content } = item || {};
+                    return (<div key={`FEATURE_${title}_${i}`} className={s.featureItem}>
+                      <h4>{title}</h4>
+                      <p>{content}</p>
+                    </div>);
+                  })}
                 </div>
-              </section>);
-            break;
-          case "faq":
-            return (
-              <section key={`NEW_SECTION_${i}`}>
-                <div className='container'>
-                  <center><h2 style={{ maxWidth: 650 }} className='my-5'>{title}</h2></center>
-                  <div>
-                    {data?.map((item, i) => {
-                      const { title, content, list } = item || {};
-                      return (
-                        <Accordion className='py-2' key={`FAQ_${i}`}>
-                          <Accordion.Item eventKey="0">
-                            <Accordion.Header className={s.accordianHeader}>{`${i + 1}. ${title}`}</Accordion.Header>
-                            <Accordion.Body className={s.accordianBody}>
-                              {content ? content : ""}
-                              {list?.length ? <ul>
-                                {list.map((item, i) => <li key={`FAQ_LIST_${i}`}>{item}</li>)}
-                              </ul> : ""}
-                            </Accordion.Body>
-                          </Accordion.Item>
-                        </Accordion>);
-                    })}
-                  </div>
-                </div>
-              </section>);
+              </div>
+            </section>);
 
-          default:
-            break;
-        }
+        if (type === "review")
+          return (
+            <section key={`NEW_SECTION_${i}`}>
+              <div className='container'>
+                <center><h2 className='my-5'>{title}</h2></center>
+                <div className='d-flex flex-wrap gap-2 justify-content-around align-items-baseline '>
+
+                  {data?.map((item, i) => {
+                    const { title, content, img } = item || {};
+                    return (<div key={`REVIEW_${title}_${i}`} className={s.featureItem}>
+                      <div className={s.featureImageContainer}>
+                        {/* <Image src={img} fill alt="image" /> */}
+                        <div dangerouslySetInnerHTML={{ __html: img }} />
+                      </div>
+                      <div><b>{title}</b></div>
+                      <p>{content}</p>
+                    </div>);
+                  })}
+                </div>
+              </div>
+            </section>);
+
+        if (type === "faq")
+          return (
+            <section key={`NEW_SECTION_${i}`}>
+              <div className='container'>
+                <center><h2 style={{ maxWidth: 650 }} className='my-5'>{title}</h2></center>
+                <div>
+                  {data?.map((item, i) => {
+                    const { title, content, list } = item || {};
+                    return (
+                      <Accordion className='py-2' key={`FAQ_${i}`}>
+                        <Accordion.Item eventKey="0">
+                          <Accordion.Header className={s.accordianHeader}>{`${i + 1}. ${title}`}</Accordion.Header>
+                          <Accordion.Body className={s.accordianBody}>
+                            {content ? content : ""}
+                            {list?.length ? <ul>
+                              {list.map((item, i) => <li key={`FAQ_LIST_${i}`}>{item}</li>)}
+                            </ul> : ""}
+                          </Accordion.Body>
+                        </Accordion.Item>
+                      </Accordion>);
+                  })}
+                </div>
+              </div>
+            </section>);
+
+        // default:
+
+        // }
       })}
       <section ref={contactRef}>
         <div className='container'>

@@ -31,14 +31,13 @@ export default function SingleProduct({ result }) {
                 />
             </Head>
             <HomeLayout >
-                <MainBanner title={result.name} />
+                <MainBanner title={result.title} />
                 {result.description ? <div className="container my-5">
-
                     <p>{result.description}</p>
                 </div> : ""}
                 {result?.section?.map((section, i) => {
                     return (<div key={`SECTION_${i}`} className={cx("container", "my-5")}>
-                        <h2>{section?.title}</h2>
+                        <h1>{section?.title}</h1>
                         <div className={s.underline} />
                         <div dangerouslySetInnerHTML={{ __html: section?.content }} />
                     </div>)
