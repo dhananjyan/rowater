@@ -41,7 +41,7 @@ export default function ProductsWeOffer(props) {
             >
                 {data?.map((item, i) => {
                     return (<SwiperSlide key={`ITEM_${title}_${i}`}>
-                        <div className={s.productCard} onClick={() => item?.slug && router.push(`${path}/${item?.slug}`)} role={item?.slug ? "button" : "document"}>
+                        <div className={s.productCard} onClick={() => item?.isLink && router.push(`${path}/${item?.slug}`)} role={item?.slug ? "button" : "document"}>
                             <div className={s.image}>
                                 <Image src={item.imgSrc} alt={item?.name} fill />
                             </div>

@@ -4,6 +4,7 @@
     "product": [
         {
             "slug": "ro-water-purifier-madurai",
+            "isLink": true,
             "imgSrc": "/images/aqua-gruard-ro-purifier.webp",
             "name": "RO Water Purifier",
             "title": "RO Water Purifier in Madurai",
@@ -43,6 +44,7 @@
             "metaDesc": "Shop industrial RO water treatment plant at affordable cost and get pure water for industrial use. We offer upto 2000 LPH water system and take custom orders.",
             "slug": "industrial-ro-plant-madurai",
             "imgSrc": "/images/250-lph-ro-plant.jpg",
+            "name": "Industrial RO Plant",
             "heading": "Get clean & pure water with our Industrial RO Plant!",
             "description": "Join leading industries trusting our RO water treatment expertise. With advanced pre-treatment methods, we ensure you get clean and safe water for all your industrial needs.",
             "section": [
@@ -212,10 +214,6 @@
                     ]
                 }
             ]
-        },
-        {
-            "slug": "aqua-guard-ro-purifier",
-            "redirect": "ro-water-purifier-madurai"
         },
         {
             "slug": "water-softner",
