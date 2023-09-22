@@ -21,7 +21,7 @@ export default function ContentImage(props) {
                 </div>
                 <div className={cx('col col-12 col-md-6 col-sm-12 order-md-1')}>
                     <div className={cx("d-flex justify-content-start align-items-center h-100  ps-5 ", s.imageContainer)}>
-                        <Image src={image} fill className={s.image} />
+                        <Image src={image} fill className={s.image} alt={titleOne+""+titleTwo} />
                     </div>
                 </div>
             </div>

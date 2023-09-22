@@ -28,13 +28,13 @@ export default function SingleProduct({ result }) {
         />
       </section>
 
-      {section?.map(item => {
+      {section?.map((item, i) => {
         const { type, title, content, img, data } = item || {};
 
         switch (type) {
           case "contentImage":
             return (
-              <section >
+              <section key={`NEW_SECTION_${i}`} >
                 <ContentImage
                   titleTwo={title}
                   description={content}
@@ -47,7 +47,7 @@ export default function SingleProduct({ result }) {
 
           case "points":
             return (
-              <section>
+              <section key={`NEW_SECTION_${i}`}>
                 <div className='container'>
                   <div className='d-flex flex-wrap gap-2 justify-content-around align-items-center '>
                     {data?.map((item, i) => {
@@ -67,7 +67,7 @@ export default function SingleProduct({ result }) {
           case "category":
             return (
 
-              <section>
+              <section key={`NEW_SECTION_${i}`}>
                 <div className='container'>
                   <center><h2 className='my-5'>{title}</h2></center>
                   <div className={cx(' ', s.categoryParent)}>
@@ -87,8 +87,8 @@ export default function SingleProduct({ result }) {
             break;
           case "banner":
             return (
-              <section>
-                <div className='container'>
+              <section key={`NEW_SECTION_${i}`} >
+                <div className='container mt-5'>
                   <div className='d-flex justify-content-center align-items-center'>
                     <div className={s.contactUs}>
                       <div>{content}</div>
@@ -103,7 +103,7 @@ export default function SingleProduct({ result }) {
             break;
           case "feature":
             return (
-              <section className={s.featureSection}>
+              <section key={`NEW_SECTION_${i}`} className={s.featureSection}>
                 <div className='container'>
                   <center><h2 className='my-5' style={{ maxWidth: 600 }}>{title}</h2></center>
                   <div className={s.categoryParent}>
@@ -121,14 +121,14 @@ export default function SingleProduct({ result }) {
             break;
           case "review":
             return (
-              <section>
+              <section key={`NEW_SECTION_${i}`}>
                 <div className='container'>
                   <center><h2 className='my-5'>{title}</h2></center>
                   <div className='d-flex flex-wrap gap-2 justify-content-around align-items-baseline '>
 
                     {data?.map((item, i) => {
                       const { title, content, img } = item || {};
-                      return (<div  key={`REVIEW_${title}_${i}`} className={s.featureItem}>
+                      return (<div key={`REVIEW_${title}_${i}`} className={s.featureItem}>
                         <div className={s.featureImageContainer}>
                           {/* <Image src={img} fill alt="image" /> */}
                           <div dangerouslySetInnerHTML={{ __html: img }} />
@@ -143,7 +143,7 @@ export default function SingleProduct({ result }) {
             break;
           case "faq":
             return (
-              <section>
+              <section key={`NEW_SECTION_${i}`}>
                 <div className='container'>
                   <center><h2 style={{ maxWidth: 650 }} className='my-5'>{title}</h2></center>
                   <div>
@@ -185,9 +185,9 @@ export default function SingleProduct({ result }) {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4488.66195378772!2d78.12269396484325!3d9.904052762076079!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c57070024b29%3A0x41d17081b7644185!2sVinayaga%20Engineering!5e0!3m2!1sen!2sin!4v1694626688115!5m2!1sen!2sin"
                 style={{ border: 0, width: "100%", height: "50%" }}
-                allowfullscreen=""
+                allowFullScreen=""
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                referrerPolicy="no-referrer-when-downgrade"></iframe>
 
               <div className='d-flex gap-2 mt-3'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className=" mt-1 bi bi-geo-alt-fill" viewBox="0 0 16 16">
@@ -203,7 +203,7 @@ export default function SingleProduct({ result }) {
 
               <div className='d-flex gap-2 mt-2'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="mt-1 bi bi-telephone-fill" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                  <path fillRule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
                 </svg>
                 <div>
                   9942188199
