@@ -1,7 +1,6 @@
 import ProductLayout from '@/components/Common/Layout/ProductLayout'
 import SingleProduct from '@/components/SingleProduct/SingleProduct'
-import React from 'react'
-import data from "../assets/data.json";
+import data from "../../assets/data.json";
 import Head from 'next/head';
 
 

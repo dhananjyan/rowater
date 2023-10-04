@@ -45,9 +45,9 @@ export default function Header() {
 
     return (
         <header className={cx(s.header, { [s.headerScrolled]: (scrollPosition > 0) })}>
-            <nav className={cx(s.headerNav, "container py-4", { [s.sideBarOpened]: isSideBarOpen })}>
+            <nav className={cx(s.headerNav, "container py-2", { [s.sideBarOpened]: isSideBarOpen })}>
                 <div className={s.logo}>
-                    <Image width={100} height={60} alt='LOGO' src="/Vinayaga Engineering Logo.png" />
+                    <Image width={100} height={60} alt='LOGO' src="/Logo.png" />
                     <h1>Vinayaga<br />Engineering</h1>
                 </div>
                 {isMobile ? <div className={s.mobileIcon} onClick={() => setIsSideBarOpen(i => !i)} role="button">

@@ -1,0 +1,37 @@
+.imageContainer {
+    position: sticky;
+    top: 0;
+    aspect-ratio: 1/1;
+    border: 1px solid rgb(218, 218, 218);
+}
+
+
+.underLine {
+    display: block;
+    width: 54.84px;
+    // border: 1.5px solid;
+    border-top: 2.74176px solid #E7E7E7;
+
+}
+
+.price {
+    font-weight: 900;
+}
+
+.deatailsSection {
+    display: grid;
+    grid-template-columns: auto;
+
+    .detailsItem {
+        display: flex;
+        gap: 15px;
+
+        .label {
+            font-weight: 600;
+        }
+
+        .value {
+            font-weight: 400;
+        }
+    }
+}

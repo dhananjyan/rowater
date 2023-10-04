@@ -213,7 +213,13 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "subProducts": {
+                "250": {
+                    "image": "",
+                    "name": ""
+                }
+            }
         },
         {
             "slug": "water-softner",
