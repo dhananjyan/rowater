@@ -3,9 +3,11 @@
     "bannerDesc": "From domestic aqua guard RO purifier installation and service to commercial water plant installation - we do everything. We also provide spare parts for all domestic & commercial water purification appliances.",
     "product": [
         {
-            "slug": "aqua-guard-ro-purifier",
+            "slug": "ro-water-purifier-madurai",
+            "isLink": true,
             "imgSrc": "/images/aqua-gruard-ro-purifier.webp",
-            "name": "Aqua guard - RO Purifier",
+            "name": "RO Water Purifier",
+            "title": "RO Water Purifier in Madurai",
             "metaTitle": "Best RO Water Purifiers in Madurai | Spares, Sales & Services",
             "metaDesc": "This is the description",
             "path": "/product",
@@ -38,46 +40,242 @@
             ]
         },
         {
+            "metaTitle": "Industrial RO & Water Treatment Plant Dealer Madurai",
+            "metaDesc": "Shop industrial RO water treatment plant at affordable cost and get pure water for industrial use. We offer upto 2000 LPH water system and take custom orders.",
+            "slug": "industrial-ro-plant-madurai",
+            "imgSrc": "/images/250-lph-ro-plant.jpg",
+            "name": "Industrial RO Plant",
+            "heading": "Get clean & pure water with our Industrial RO Plant!",
+            "description": "Join leading industries trusting our RO water treatment expertise. With advanced pre-treatment methods, we ensure you get clean and safe water for all your industrial needs.",
+            "section": [
+                {
+                    "type": "contentImage",
+                    "title": "What is Industrial RO Plant?",
+                    "content": "An Industrial Reverse Osmosis (RO) Plant is a water treatment system designed for industrial uses to purify water. It uses RO, a filtration technique that forces water through a semi-permeable membrane to eliminate unwanted substances.",
+                    "img": "/images/250-lph-ro-plant.jpg"
+                },
+                {
+                    "type": "points",
+                    "data": [
+                        {
+                            "title": "Easy to install",
+                            "img": "<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='currentColor' class='bi bi-gear-fill' viewBox='0 0 16 16'> <path d='M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.820.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z'/> </svg>"
+                        },
+                        {
+                            "title": "Fully Automatic",
+                            "img": "<svg xmlns='http://www.w3.org/2000/svg' width='40' height='38' viewBox='0 0 25 24' fill='none'><path d='M19.2375 8.30172L15.3875 12.143H18.275C18.275 15.3216 15.6859 17.9049 12.5 17.9049C11.5279 17.9049 10.6039 17.6648 9.80498 17.2327L8.39973 18.6347C9.5836 19.3838 10.9889 19.8255 12.5 19.8255C16.7542 19.8255 20.2 16.3876 20.2 12.143H23.0875L19.2375 8.30172ZM6.72498 12.143C6.72498 8.96434 9.3141 6.38108 12.5 6.38108C13.4721 6.38108 14.3961 6.62116 15.195 7.05331L16.6002 5.65124C15.4164 4.9022 14.0111 4.46045 12.5 4.46045C8.24573 4.46045 4.79998 7.89839 4.79998 12.143H1.91248L5.76248 15.9843L9.61248 12.143H6.72498Z' fill='black'/></svg>"
+                        },
+                        {
+                            "title": "Cost-efficient",
+                            "img": "<svg focusable='false' width='40' height='40' fill='currentColor' aria-hidden='true' viewBox='0 0 24 24' data-testid='KeyboardDoubleArrowDownIcon'><path d='M18 6.41 16.59 5 12 9.58 7.41 5 6 6.41l6 6z'></path><path d='m18 13-1.41-1.41L12 16.17l-4.59-4.58L6 13l6 6z'></path></svg>"
+                        }
+                    ]
+                },
+                {
+                    "type": "category",
+                    "title": "Our Industrial RO Plant Solutions",
+                    "data": [
+                        {
+                            "title": "50 LPH RO Plant",
+                            "img": "/images/250lph.webp"
+                        },
+                        {
+                            "title": "100 LPH RO Plant",
+                            "img": "/images/250lph.webp"
+                        },
+                        {
+                            "title": "150 LPH RO Plant",
+                            "img": "/images/250lph.webp"
+                        },
+                        {
+                            "title": "200 LPH RO Plant",
+                            "img": "/images/250lph.webp"
+                        },
+                        {
+                            "title": "250 LPH RO Plant",
+                            "img": "/images/250lph.webp"
+                        },
+                        {
+                            "title": "500 LPH RO Plant",
+                            "img": "/images/250lph.webp"
+                        },
+                        {
+                            "title": "1000 LPH RO Plant",
+                            "img": "/images/250lph.webp"
+                        },
+                        {
+                            "title": "2000 LPH RO Plant",
+                            "img": "/images/250lph.webp"
+                        },
+                        {
+                            "title": "Custom Solution",
+                            "img": "/images/250lph.webp"
+                        }
+                    ]
+                },
+                {
+                    "type": "banner",
+                    "content": "Schedule an industrial visit to get an exact project quote from our expert."
+                },
+                {
+                    "type": "feature",
+                    "title": "Industrial RO Water Purifier Features",
+                    "data": [
+                        {
+                            "title": "Clean & Pure Water",
+                            "content": "RO membranes have microscopic pores that allow water molecules to pass through while blocking dissolved salts, minerals, and other impurities. The membranes reduce Total Dissolved Solids (TDS) and produce purified water."
+                        },
+                        {
+                            "title": "Power Efficient",
+                            "content": "Industrial RO water purifiers use modern and energy-efficient filtration technologies like, high quality pressure vessels, pumps, filters, & membranes that improves system efficiency, thus saving power consumption."
+                        },
+                        {
+                            "title": "Handles High Capacity",
+                            "content": "Industrial water plants are designed to handle large volumes of water, often ranging from 500 liters per hour (LPH) or more. Our RO plants starts from 50 LPH to all the way above 2000 LPH. And it can be customized to your needs."
+                        },
+                        {
+                            "title": "Pre-treatment Systems",
+                            "content": "Our industrial RO water purifiers include pre-treatment systems like sand filters and activated carbon filters that ensures RO membranes operates effectively and will prolong its lifespan."
+                        },
+                        {
+                            "title": "High Pressure Vessels",
+                            "content": "RO membranes are placed inside pressure vessels designed to withstand the high pressures required for the reverse osmosis process. These vessels protect the membranes and maintain adequate pressure."
+                        },
+                        {
+                            "title": "Automatic handling",
+                            "content": "RO plants can be operated manually and automatically depending on customers' requirements and environment. A control panel is used to monitor and control the operation, including flow rates, pressure, etc."
+                        }
+                    ]
+                },
+                {
+                    "type": "banner",
+                    "content": "Our Industrial RO plants & purifiers can be customized to meet your specific water quality and quantity needs."
+                },
+                {
+                    "type": "review",
+                    "title": "What our customers say about us",
+                    "data": [
+                        {
+                            "title": "Vignesh",
+                            "img": "<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='#60dfea' stroke='#000' stroke-width='2' />  <text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='40' font-weight='bold' fill='#000'>V</text></svg>",
+                            "content": "Good service and quick response for the customer queries"
+                        },
+                        {
+                            "title": "Ravichandran",
+                            "img": "<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='#cc458f' stroke='#000' stroke-width='2' />  <text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='40' font-weight='bold' fill='#000'>R</text></svg>",
+                            "content": "Best customer service on before and after.. suberb quality best price.. In this place easily identify in city.."
+                        },
+                        {
+                            "title": "Duvaragan",
+                            "img": "<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='#ea5454' stroke='#000' stroke-width='2' />  <text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='40' font-weight='bold' fill='#000'>D</text></svg>",
+                            "content": "Execellent Job done by Vinayaga team for Installation. Our water problem solved fully. Thanks Ganesh."
+                        }
+                    ]
+                },
+                {
+                    "type": "faq",
+                    "title": "Questions you might have about industrial RO water purifier",
+                    "data": [
+                        {
+                            "title": "How much does an industrial RO water system cost?",
+                            "content": "Industrial RO water plants' cost varies based on system design, operating conditions, the quality of components used, and specific water quality and quantity requirements of your industry. To give you an rough estimate, the 250 LPH RO plant costs around 1 Lakh INR without taxes."
+                        },
+                        {
+                            "title": "Is industrial RO water safe to drink?",
+                            "content": "Yes, industrial RO water is safe to drink if the RO system is operated and maintained properly."
+                        },
+                        {
+                            "title": "What is the cost of 1000 LPH RO plant?",
+                            "content": "The 1000 LPH industrial RO plant costs around {Add the amount} INR without taxes."
+                        },
+                        {
+                            "title": "What are the components used in commercial RO plant?",
+                            "content": "The RO plant comprises several essential components like sand filters, RO membranes, high-pressure pump, pressure vessels, control panel, pressure gauges, flow meters, etc."
+                        },
+                        {
+                            "title": "Who is the best industrial/commercial RO plant dealer in India?",
+                            "content": "At Vinayaga Engineering, we offer customized and branded industrial RO water plants at affordable prices to ensure safe drinking water for everyone. We serve locations such as, Madurai, Dindigul, Sivagangai, Virudhunagar, Theni, Ramanathapuram, and Tirunelveli."
+                        },
+                        {
+                            "title": "What are the benefits of using industrial RO plant?",
+                            "list": [
+                                "Pure & safe water for your industrial needs.",
+                                "Enhances company's reputation.",
+                                "RO systems can be scaled to meet your water needs.",
+                                "Environment friendly as RO plants don't use chemical treatment methods.",
+                                "Meeting industrial water quality regulations and standards is easier.",
+                                "Energy and cost-efficient to maintain."
+                            ]
+                        },
+                        {
+                            "title": "How industrial water purification plant work?",
+                            "content": "An industrial RO plant works by using a high-pressure pump to push water through RO membranes, which selectively allow water molecules to pass while blocking impurities and contaminants. This process separates purified water from impurities, resulting in purified water suitable for industrial use."
+                        }
+                    ]
+                }
+            ],
+            "subProducts": {
+                "250": {
+                    "image": "",
+                    "name": ""
+                }
+            }
+        },
+        {
             "slug": "water-softner",
             "imgSrc": "/images/water-softner.jpg",
             "name": "Water softener",
-            "title": "Water softener"
+            "title": "Water softener",
+            "metaTitle": "Water softener",
+            "metaDesc": "Water softener"
         },
         {
             "slug": "iron-remover",
             "imgSrc": "/images/iron-remover.webp",
             "name": "Iron remover",
-            "title": "Iron remover"
+            "title": "Iron remover",
+            "metaTitle": "Iron remover",
+            "metaDesc": "Iron remover"
         },
         {
             "slug": "water-dispenser",
             "imgSrc": "/images/water-dispenser.jpg",
             "name": "Water dispenser",
-            "title": "Water dispenser"
+            "title": "Water dispenser",
+            "metaTitle": "Water dispenser",
+            "metaDesc": "Water dispenser"
         },
         {
             "slug": "dolphin-aqua-care-ro-purifier",
             "imgSrc": "/images/dolphin-water-purifier.webp",
             "name": "Dolphin aqua care - RO Purifier",
-            "title": "Dolphin aqua care - RO Purifier"
+            "title": "Dolphin aqua care - RO Purifier",
+            "metaTitle": "Dolphin aqua care - RO Purifier",
+            "metaDesc": "Dolphin aqua care - RO Purifier"
         },
         {
             "slug": "domestic-water-purifier",
             "imgSrc": "/images/aqua-gruard-ro-purifier.webp",
             "name": "Domestic water purifier",
-            "title": "Domestic water purifier"
+            "title": "Domestic water purifier",
+            "metaTitle": "Domestic water purifier",
+            "metaDesc": "Domestic water purifier"
         },
         {
             "slug": "commercial-water-purifier",
             "imgSrc": "/images/comercial-water-purifier.jpg",
             "name": "Commercial water purifier",
-            "title": "Commercial water purifier"
+            "title": "Commercial water purifier",
+            "metaTitle": "Commercial water purifier",
+            "metaDesc": "Commercial water purifier"
         },
         {
             "slug": "uv-purifier",
             "imgSrc": "/images/uv-purifier.jpg",
             "name": "UV purifier",
-            "title": "UV purifier"
+            "title": "UV purifier",
+            "metaTitle": "UV purifier",
+            "metaDesc": "UV purifier"
         }
     ],
     "wholeSaleDealerOf": [

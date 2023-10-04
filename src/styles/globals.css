@@ -52,7 +52,7 @@ html {
 }
 
 body {
-  font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
+  /* font-family: Poppins, Helvetica, Arial, Lucida, sans-serif; */
   font-kerning: normal;
   word-wrap: break-word;
   font-feature-settings: "kern", "liga", "clig", "calt";
@@ -63,6 +63,9 @@ body {
   margin: 35px 0 0;
   word-spacing: 4px;
   letter-spacing: .9px;
+
+  font-family: 'Open Sans', sans-serif !important;
+/* font-family: 'Roboto', sans-serif; */
   /* line-height: 30px; */
 }
 

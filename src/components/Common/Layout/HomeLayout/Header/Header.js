@@ -11,7 +11,7 @@ import useScrollPosition from "@/hooks/useScrollPosition";
 import { useRouter } from "next/router";
 
 
-import data from "../../../assets/data.json";
+import data from "../../../../../assets/data.json";
 import Image from "next/image";
 
 export default function Header() {
@@ -31,7 +31,7 @@ export default function Header() {
     }, [isMobile])
 
     const handleMenuClick = (id) => {
-        if (id)
+        if (id && (typeof id === "string"))
             router.push("/").then(() => {
                 setIsSideBarOpen(false)
                 const container = document.getElementById(id);
@@ -75,7 +75,7 @@ export default function Header() {
                             </svg></span>}
                         <input type="checkbox" checked={toggle} className={s.hiddenToggle} />
                         {toggle && <ul>
-                            {data?.product?.map((item, i) => <li key={`PRODUCT_LIST_${i}`}><Link onClick={handleMenuClick} href={`/products/${item?.slug}`}>{item?.name}</Link></li>)}
+                            {data?.product?.map((item, i) => i != 0 ? "" : <li key={`PRODUCT_LIST_${i}`}><Link onClick={handleMenuClick} href={`/products/${item?.slug}`}>{item?.name}</Link></li>)}
                             {/* <li><Link onClick={handleMenuClick} href="/product/ro-system">RO System</Link></li>
                             <li><Link onClick={handleMenuClick} href="/product/ro-cabinet">RO Cabinet</Link></li>
                             <li><Link onClick={handleMenuClick} href="/product/reverse-osmosis-system">Reverse Osmosis System</Link></li>
@@ -90,6 +90,9 @@ export default function Header() {
                             <li><Link onClick={handleMenuClick} href="/product/">UF Membrane</Link></li> */}
                         </ul>}
                     </li>
+                    <li><Link role="button" onClick={() => handleMenuClick()} href="/industrial-ro-plant" className={cx({
+                        [s.actives]: pathname?.includes("industrial-ro-plant")
+                    })}>Industrial RO Plant</Link></li>
                     <li><p role="button" onClick={() => handleMenuClick("about-us")} href="/#about-us" className={cx({
                         [s.actives]: pathname?.includes("aboutUs")
                     })}>About Us</p></li>

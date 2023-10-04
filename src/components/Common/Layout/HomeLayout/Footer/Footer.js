@@ -6,12 +6,20 @@ export default function Footer() {
     const router = useRouter();
 
     const handleMenuClick = (id) => {
-        const container = document.getElementById(id);
-        if (container) {
-            const yOffset = -100; // Replace with your desired offset
-            const y = container.getBoundingClientRect().top + window.pageYOffset + yOffset;
-            window.scrollTo({ top: y, behavior: 'smooth' });
+        const scrollTo = () => {
+            const container = document.getElementById(id);
+            if (container) {
+                const yOffset = -100; // Replace with your desired offset
+                const y = container.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+            }
         }
+        if (router.pathname !== "/")
+            router.push("/").then(() => {
+                scrollTo()
+            })
+        else
+            scrollTo()
     }
     return (
         <footer className={cx(s.footer)}>
@@ -55,12 +63,35 @@ export default function Footer() {
                         <div className="col col-12 col-md-4 col-lg-4 my-4">
                             <h5>Contact us</h5>
                             <div>
-                                <div>Vinayaga Engineering</div>
-                                <div>152/IB, Arunjunai nagar,</div>
-                                <div>Avaniyapuram,</div>
-                                <div> Madurai - 625012.</div>
-                                <div>Mobile number: 9942188199</div>
-                                <div>Email: vinayaengineeringro@gmail.com</div>
+                                <div className='d-flex gap-2 mt-3'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className=" mt-1 bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                    </svg>
+                                    <div>
+                                        <div>Vinayaga Engineering</div>
+                                        <div>152/IB, Arunjunai nagar,</div>
+                                        <div>Avaniyapuram,</div>
+                                        <div> Madurai - 625012.</div>
+                                    </div>
+                                </div>
+
+                                <div className='d-flex gap-2 mt-2'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="mt-1 bi bi-telephone-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                    </svg>
+                                    <div>
+                                        <a href="tel:9942188199">9942188199</a>
+                                    </div>
+                                </div>
+
+                                <div className='d-flex gap-2 mt-2'>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="mt-1 bi bi-envelope-fill" viewBox="0 0 16 16">
+                                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                                    </svg>
+                                    <div>
+                                        vinayaengineeringro@gmail.com
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
