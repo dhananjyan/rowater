@@ -6,6 +6,7 @@ import CommonButton from '../Common/Button/Button';
 import { Accordion } from 'react-bootstrap';
 import { lazy, useRef } from 'react';
 import ContactForm from '@/components/ContactForm/ContactForm';
+import Link from 'next/link';
 // const ContactForm = lazy(() => import('@/components/ContactForm/ContactForm'));
 
 export default function SingleProduct({ result }) {
@@ -66,13 +67,20 @@ export default function SingleProduct({ result }) {
 
         if (type === "category")
           return (
-
             <section key={`NEW_SECTION_${i}`}>
               <div className='container'>
                 <center><h2 className='my-5'>{title}</h2></center>
                 <div className={cx(' ', s.categoryParent)}>
                   {data?.map((item, i) => {
-                    const { title, img } = item || {};
+                    const { title, img, link } = item || {};
+                    if (link)
+                      return (
+                        <Link href={link} key={`CATEGORY_${title}_${i}`} className={s.categoryItem}>
+                          <div className={s.categoryImageContainer}>
+                            <Image src={img} fill alt="image" />
+                          </div>
+                          <h5>{title}</h5>
+                        </Link>);
                     return (<div key={`CATEGORY_${title}_${i}`} className={s.categoryItem}>
                       <div className={s.categoryImageContainer}>
                         <Image src={img} fill alt="image" />

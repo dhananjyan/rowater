@@ -77,7 +77,86 @@
                     "data": [
                         {
                             "title": "50 LPH RO Plant",
-                            "img": "/images/250lph.webp"
+                            "img": "/images/250lph.webp",
+                            "name": "250 LPH Inustrial RO Water Plant",
+                            "price": "1,00,000",
+                            "shortDesc": "Short description about this product",
+                            "features": [
+                                {
+                                    "label": "Availability",
+                                    "value": "In Stock"
+                                },
+                                {
+                                    "label": "Purifier Type:",
+                                    "value": "In Stock"
+                                },
+                                {
+                                    "label": "Capacity",
+                                    "value": "In Stock"
+                                },
+                                {
+                                    "label": "For Use",
+                                    "value": "In Stock"
+                                }
+                            ],
+                            "description": [
+                                "250 LPH (Liters Per Hour) Industrial Reverse Osmosis (RO) plan is a vital water treatment system used across various industries.  Its designed to purify and filter water on a large scale, ensuring the removal of impurities, contaminants and dissolved solids to produce hight-quality, potable water for commercial purposes.",
+                                "The 250 LPH capacity makes it suitable for small to medium-sized industrial applications, such as food and beverage processing, pharmaceutical manufacturing, or boiler feed water preparation."
+                            ],
+                            "specification": [
+                                {
+                                    "label": "Product",
+                                    "value": "250 LPH RO Plant"
+                                },
+                                {
+                                    "label": "Vessel Material",
+                                    "value": "FPH"
+                                },
+                                {
+                                    "label": "TDS Level",
+                                    "value": "Up to 3000"
+                                },
+                                {
+                                    "label": "Power",
+                                    "value": "0.5 HP"
+                                },
+                                {
+                                    "label": "Operating Pressure",
+                                    "value": "100 PSI"
+                                },
+                                {
+                                    "label": "Water Source",
+                                    "value": "Bore Well or Stored Water"
+                                },
+                                {
+                                    "label": "Pump Brand",
+                                    "value": "CRI, ALGO, SPEED"
+                                },
+                                {
+                                    "label": "Warranty",
+                                    "value": "1 Yr For Electric & Electronic Spares"
+                                },
+                                {
+                                    "label": "Maintenance",
+                                    "value": "3 Times a Year"
+                                },
+                                {
+                                    "label": "Installation time",
+                                    "value": "~2 Hours"
+                                }
+                            ],
+                            "spares": [
+                                "Raw Water Pump",
+                                "10*54 High Pressure Vessel",
+                                "High Pressure Pump",
+                                "Micron Filters",
+                                "Flow Meter",
+                                "Dosing Pump & Liquid",
+                                "Activated Carbon and Silex",
+                                "Float Value",
+                                "Multiport Value",
+                                "Pipelines"
+                            ]
                         },
                         {
                             "title": "100 LPH RO Plant",
@@ -93,6 +172,7 @@
                         },
                         {
                             "title": "250 LPH RO Plant",
+                            "link": "/industrial-ro-plant/250-lph-ro-plant",
                             "img": "/images/250lph.webp"
                         },
                         {
