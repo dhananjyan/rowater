@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { usePathname, useParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 import cx from "classname";
 import s from "./style.module.scss";

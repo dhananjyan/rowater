@@ -4,6 +4,9 @@ import s from "./SubProduct.module.scss";
 import { Button } from "react-bootstrap";
 import ContactForm from '@/components/ContactForm/ContactForm';
 import { useRef } from "react";
+import CircleProgress from "@/components/Common/CircleProgress/CircleProgress";
+import { ReactSVG } from "react-svg";
+import starIcon from "@/assets/svg/star.svg"
 
 export default function SubProduct() {
 
@@ -140,24 +143,67 @@ export default function SubProduct() {
                             <li>Post-Treatment</li>
                         </ul>
                     </div>
+
                     <div>
                         <div className={cx(s.subTitle, "pt-4")}>Ratings & Reviews</div>
+                        <div className={cx(s.reviewCircleContainer, "pt-3")}>
+                            <div className={s.circle}><CircleProgress /></div>
+                            <div className={s.textBlue}>4.9 out of 29 reviews</div>
+                        </div>
+                        <div className={s.reviewSection}>
+                            <div className={s.reviewItem}>
+                                <div className={s.reviewStarSection}>
+                                    <div className={s.reviewStarList}><ReactSVG src={starIcon.src} /><ReactSVG src={starIcon.src} /><ReactSVG src={starIcon.src} /><ReactSVG src={starIcon.src} /><ReactSVG src={starIcon.src} /></div>
+                                    <div>5</div>
+                                </div>
+                                <div className={cx(s.text, "pt-2")}>
+                                    The best RO machine we had from this company. The quality is too good and they have no cost first service as well.
+                                </div>
+                                <div className={cx(s.text, "pt-2 opacity-75")}>
+                                    Authenticated buyer | September 2023
+                                </div>
 
-                        <div className={cx(s.text, "pt-3")}>Any 250 LPH Reverse Osmosis Plant works by purifying water by forcing it through a semipermeable membrane.  Initially, Pre-filtration eliminates large particles.</div>
+                            </div>
+                            <div className={s.reviewItem}>
+                                <div className={s.reviewStarSection}>
+                                    <div className={s.reviewStarList}><ReactSVG src={starIcon.src} /><ReactSVG src={starIcon.src} /><ReactSVG src={starIcon.src} /><ReactSVG src={starIcon.src} /><ReactSVG src={starIcon.src} /></div>
+                                    <div>5</div>
+                                </div>
+                                <div className={cx(s.text, "pt-2")}>
+                                    Best customer service on before and after.. suberb quality best price.. In this place easily identify in city..
+                                </div>
+                                <div className={cx(s.text, "pt-2 opacity-75")}>
+                                    Authenticated buyer | September 2020
+                                </div>
 
-                        <div className={cx(s.text, "pt-3")}>Then, a high-pressure pump pushes the water through the RO membrane, allowing only pure water molecules to pass while trapping impurities.  The purified water is collected, and the rejected impurities are discharged as waste water.</div>
-                        <div className={cx(s.text, "pt-3")}>To make it short, the process as follows:</div>
+                            </div>
+                            <div className={s.reviewItem}>
+                                <div className={s.reviewStarSection}>
+                                    <div className={s.reviewStarList}><ReactSVG src={starIcon.src} /><ReactSVG src={starIcon.src} /><ReactSVG src={starIcon.src} /><ReactSVG src={starIcon.src} /><ReactSVG src={starIcon.src} /></div>
+                                    <div>5</div>
+                                </div>
+                                <div className={cx(s.text, "pt-2")}>
+                                    Good service and quick response for the customer queries
+                                </div>
+                                <div className={cx(s.text, "pt-2 opacity-75")}>
+                                    Authenticated buyer | January 2020
+                                </div>
 
-                        <ul className="pt-3">
-                            <li>Pre-filtration</li>
-                            <li>Pressurization of pre-filtered water</li>
-                            <li>Reverse Osmosis</li>
-                            <li>Purified water collection</li>
-                            <li>Waste water discharge</li>
-                            <li>Post-Treatment</li>
-                        </ul>
+                            </div>
+                        </div>
+                        <div className={cx("mt-3")}>
+                            <a className={cx(s.textLink)} href="https://maps.app.goo.gl/DUxq1JhNrR9vPNuh8" target="_blank">See all 29 reviews</a>
+                        </div>
+
+                        <a href="https://g.page/r/CSSWGd_hBAD4EBE/review" target="_blank">
+                            <Button className={cx(s.btn, "mt-5")} onClick={scrollToContact}>Write a review</Button>
+                        </a>
+
                     </div>
                 </div>
+            </div>
+
+            <div>
             </div>
 
             <section ref={contactRef}>
@@ -213,6 +259,7 @@ export default function SubProduct() {
                     </div>
                 </div>
             </section>
+
         </div>
     </div>
     )
