@@ -104,6 +104,44 @@
         }
     }
 
+    
+
+    .categoryParent {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: flex-start;
+        place-items: center;
+
+        .categoryItem {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 15px;
+            text-decoration: none;
+            color: black;
+
+            .categoryImageContainer {
+                position: relative;
+                width: 300px;
+                aspect-ratio: 1/1;
+                border-radius: 4px;
+                // border: 1px solid rgb(228, 228, 228);
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+                img {
+                    border-radius: 50%;
+                }
+
+            }
+
+            h5 {
+                text-align: center;
+            }
+        }
+    }
+
     // .reviewContainer {
     //     width: 300px;
     //     height: 300px;

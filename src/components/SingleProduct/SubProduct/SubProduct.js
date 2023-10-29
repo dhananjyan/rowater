@@ -203,8 +203,43 @@ export default function SubProduct() {
                 </div>
             </div>
 
-            <div>
-            </div>
+            <section >
+                <div className='container '>
+                    <h2 className='mt-5'>Related Industrial RO Plant</h2>
+                    <div className={cx(' ', s.categoryParent)}>
+                        <div className={s.categoryItem}>
+                            <div className={s.categoryImageContainer}>
+                                <Image src="/images/250lph.webp" fill alt="image" />
+                            </div>
+                            <h5>50 LPH RO Plant</h5>
+                        </div>
+                        <div className={s.categoryItem}>
+                            <div className={s.categoryImageContainer}>
+                                <Image src="/images/250lph.webp" fill alt="image" />
+                            </div>
+                            <h5>100 LPH RO Plant</h5>
+                        </div>
+                        <div className={s.categoryItem}>
+                            <div className={s.categoryImageContainer}>
+                                <Image src="/images/250lph.webp" fill alt="image" />
+                            </div>
+                            <h5>250 LPH RO Plant</h5>
+                        </div>
+                        <div className={s.categoryItem}>
+                            <div className={s.categoryImageContainer}>
+                                <Image src="/images/250lph.webp" fill alt="image" />
+                            </div>
+                            <h5>500 LPH RO Plant</h5>
+                        </div>
+                        <div className={s.categoryItem}>
+                            <div className={s.categoryImageContainer}>
+                                <Image src="/images/250lph.webp" fill alt="image" />
+                            </div>
+                            <h5>1000 LPH RO Plant</h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <section ref={contactRef}>
                 <div className='container mt-3'>
@@ -261,6 +296,6 @@ export default function SubProduct() {
             </section>
 
         </div>
-    </div>
+    </div >
     )
 }
