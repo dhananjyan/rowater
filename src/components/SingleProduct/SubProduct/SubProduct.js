@@ -44,7 +44,7 @@ export default function SubProduct() {
                         </div>
                         <div className={s.detailsItem}>
                             <div className={s.label}>Purifier Type:</div>
-                            <div className={s.text}>In Stock</div>
+                            <div className={s.text}>Reverse Osmosis</div>
                         </div>
                         <div className={s.detailsItem}>
                             <div className={s.label}>Capacity:</div>
