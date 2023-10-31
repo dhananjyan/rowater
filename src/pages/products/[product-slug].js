@@ -38,7 +38,7 @@ export default function SingleProduct({ result }) {
                 </div> : ""}
                 {result?.section?.map((section, i) => {
                     return (<div key={`SECTION_${i}`} className={cx("container", "my-5")}>
-                        <h1>{section?.title}</h1>
+                        <h2>{section?.title}</h2>
                         <div className={s.underline} />
                         <div dangerouslySetInnerHTML={{ __html: section?.content }} />
                     </div>)
