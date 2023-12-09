@@ -1,0 +1,46 @@
+.headerNavList {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    min-width: 270px;
+    font-size: 17px;
+    padding-top: 10px;
+    font-weight: 500;
+    color: rgb(105, 102, 102);
+
+    li {
+
+        padding: 10px 20px;
+
+        a,
+        p {
+            text-decoration: none;
+            margin: 0;
+            display: flex;
+            gap: 15px;
+            color: inherit;
+
+        }
+
+        ul {
+
+            list-style: none;
+            padding: 0;
+            width: 100%;
+
+            li {
+                padding: 10px 20px;
+
+                a {
+                    text-decoration: none;
+                    margin: 0;
+
+                }
+            }
+        }
+
+        .active {}
+    }
+}

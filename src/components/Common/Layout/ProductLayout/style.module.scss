@@ -1,5 +1,29 @@
 @import "../../../../assets//scss/common.scss";
 
+.top {
+    display: flex;
+    /* display: grid;
+    grid-template-columns: 1fr auto; */
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.sidebar {
+    position: fixed;
+    right: 0;
+    /* left: calc(100vw + 300px); */
+    top: 0;
+    height: 100vh;
+    background: white;
+    z-index: 1000;
+    // width: 70%;
+    max-width: 300px;
+    border-left: 1px solid #e3e3e3;
+}
+
 .mainParent {
     display: grid;
     height: 100vh;

@@ -29,12 +29,13 @@ export default function SubProduct() {
             <div className={cx("col col-12 col-md-6")}>
 
                 <div className={cx(s.detailsPart)}>
-                    <h1 className={s.productName}>250 LPH Inustrial RO Water Plant</h1>
-                    <span className={cx(s.underLine, "mt-3")}></span>
+                    <h1 className={s.productName}>250 LPH Industrial RO Water Plant</h1>
+                    <span className={cx(s.underLine, "mt-3 mb-2")}></span>
+                    <b>Price:</b>
                     <h2 className={cx(s.price, "pt-4")}>
                         ₹ 1,00,000 (+Taxes)
                     </h2>
-                    <p className={cx("pt-3", s.text)}>250 LPH Industrial Reverse Osmosis (RO) System: Clean, Pure Water for Industry</p>
+                    {/* <p className={cx("pt-3", s.text)}>250 LPH Industrial Reverse Osmosis (RO) System: Clean, Pure Water for Industry</p> */}
                     <div
                         className={cx(s.deatailsSection)}
                     >

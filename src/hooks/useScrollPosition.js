@@ -2,18 +2,21 @@
 
 import { useEffect, useState } from "react";
 
-const useScrollPosition = () => {
+const useScrollPosition = (id) => {
+    console.log("id", id)
     const [scrollPosition, setScrollPosition] = useState(0);
 
     useEffect(() => {
+        let target = id ? document.getElementById(id) : window
         const handleScroll = () => {
-            const position = window.pageYOffset;
+            const position = target?.scrollTop;
+            console.log("scrolling", position)
             setScrollPosition(position);
         };
 
-        window.addEventListener('scroll', handleScroll);
+        target?.addEventListener('scroll', handleScroll);
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            target?.removeEventListener('scroll', handleScroll);
         };
     }, []);
 
