@@ -22,7 +22,10 @@ export default function SubProduct() {
 
             <div className={cx("col col-12 col-md-6")}>
                 <div className={cx(s.imageContainer, "mt-2")}>
-                    <Image src={"/images/250-lph-ro-plant.jpg"} fill />
+                    <div>
+                        <Image alt="Product Image" src={"/images/250-lph-ro-plant.jpg"} fill />
+
+                    </div>
                 </div>
             </div>
 

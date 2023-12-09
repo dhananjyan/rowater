@@ -4,7 +4,7 @@ import useWindowSize from "./useWindowSize";
 
 const useIsMobile = () => {
     const windowSize = useWindowSize();
-    const isMobile = windowSize.width < 720;
+    const isMobile = windowSize.width < 990;
 
     return isMobile;
 };

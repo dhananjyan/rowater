@@ -23,19 +23,24 @@ export default function Header(props) {
     const [isSideBarOpen, setIsSideBarOpen] = useState(false);
 
     console.log("scrollPosition", scrollPosition)
-    const handleMenuClick = (id) => {
-        if (id && (typeof id === "string"))
 
+    const goTo = id => {
+        const container = document.getElementById(id);
+        // onHide()
+        if (container) {
+            const yOffset = -100; // Replace with your desired offset
+            const y = container.offsetTop + yOffset;
+            console.log("ididididid", id, y, container)
+            document.getElementById("scroller").scrollTo({ top: y, behavior: 'smooth' });
+        }
+    }
+    const handleMenuClick = (id) => {
+        if (id && (typeof id === "string") && !(id?.includes("/")))
             router.push("/").then(() => {
-                const container = document.getElementById(id);
-                // onHide()
-                if (container) {
-                    const yOffset = -100; // Replace with your desired offset
-                    const y = container.offsetTop + yOffset;
-                    console.log("ididididid", id, y, container)
-                    document.getElementById("scroller").scrollTo({ top: y, behavior: 'smooth' });
-                }
+                goTo(id)
             })
+        else
+            goTo(id)
     }
 
     return (
