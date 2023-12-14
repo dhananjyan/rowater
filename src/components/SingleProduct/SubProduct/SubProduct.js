@@ -24,7 +24,6 @@ export default function SubProduct() {
                 <div className={cx(s.imageContainer, "mt-2")}>
                     <div>
                         <Image alt="Product Image" src={"/images/250-lph-ro-plant.jpg"} fill />
-
                     </div>
                 </div>
             </div>

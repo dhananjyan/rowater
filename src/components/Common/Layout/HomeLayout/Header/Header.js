@@ -48,7 +48,7 @@ export default function Header(props) {
             <nav className={cx(s.headerNav)}>
                 <div className={s.logo}>
                     <Image width={100} height={60} alt='LOGO' src="/logo.png" />
-                    <h1>Vinayaga<br />Engineering</h1>
+                    <div>Vinayaga<br />Engineering</div>
                 </div>
                 {isMobile ? <div className={s.mobileIcon} onClick={openSidebar} role="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
